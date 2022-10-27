@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SL_Material xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ShaderName>Custom/DiffNormIllu/DiffNormIlluReflectDetailLight</ShaderName>
+  <Properties />
+  <Keywords>
+    <string>_DETAIL_MULX2</string>
+    <string>_EMISSION_ANIMATED</string>
+    <string>_NORMALMAP</string>
+    <string>_OCCLUSION_FROM_ALBEDO_ALPHA</string>
+    <string>_SPECGLOSSMAP</string>
+    <string>_WETNESS_NONE</string>
+  </Keywords>
+</SL_Material>
