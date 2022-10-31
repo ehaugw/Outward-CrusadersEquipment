@@ -122,7 +122,6 @@
     <Compile Include="Items\HolyAvenger.cs" />
     <Compile Include="Items\HolyWaterItem.cs" />
     <Compile Include="CrusadersEquipment.cs" />
-    <Compile Include="Items\.cs" />
     <Compile Include="Items\Capitalizer.cs" />
     <Compile Include="Items\RadiantSpark.cs" />
     <Compile Include="Items\PurgingFlame.cs" />

@@ -54,6 +54,7 @@
         public Item zealotsBootsInstance;
 
         public Item purgingFlameInstance;
+        public Item capitalizerInstance;
 
         internal void Awake()
         {
@@ -79,6 +80,7 @@
             adamantineIngotInstance = AdamantineIngot.MakeItem();
 
             purgingFlameInstance = PurgingFlame.MakeItem();
+            capitalizerInstance = Capitalizer.MakeItem();
 
             divineLongswordRecipeInstance = DivineLongsword.MakeRecipes();
             holyAvengerRecipeInstance = HolyAvenger.MakeRecipes();
