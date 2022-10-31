@@ -53,6 +53,8 @@
         public Item zealotsArmorInstance;
         public Item zealotsBootsInstance;
 
+        public Item purgingFlameInstance;
+
         internal void Awake()
         {
             Instance = this;
@@ -75,6 +77,8 @@
             holyAvengerInstance = HolyAvenger.MakeItem();
             lightMendersRelicInstance = AncientRelic.MakeItem();
             adamantineIngotInstance = AdamantineIngot.MakeItem();
+
+            purgingFlameInstance = PurgingFlame.MakeItem();
 
             divineLongswordRecipeInstance = DivineLongsword.MakeRecipes();
             holyAvengerRecipeInstance = HolyAvenger.MakeRecipes();
@@ -135,6 +139,8 @@
             crusadersRoundShieldRecipeInstance = CrusadersRoundShield.MakeRecipes();
             crusadersShieldRecipeInstance = CrusadersShield.MakeRecipes();
             thickWhitePaintRecipeInstance = ThickWhitePaint.MakeRecipes();
+
+            RadiantSpark.Init();
         }
 
         private void OnSceneLoadedEquipment()

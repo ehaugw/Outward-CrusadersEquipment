@@ -76,7 +76,7 @@ namespace CrusadersEquipment
 
             bonusDamage.Tags = tagSelectorList;
             bonusDamage.IsModifier = true;
-            bonusDamage.Value = 25;
+            bonusDamage.Value = 10;
 
             if (ResourcesPrefabManager.Instance.GetStatusEffectPrefab(ModTheme.ImpendingDoomEffectIdentifierName) is StatusEffect impendingDoomInstance)
             {

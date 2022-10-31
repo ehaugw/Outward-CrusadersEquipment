@@ -38,6 +38,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EffectSourceConditions\EffectSourceConditions.csproj">
+      <Project>{451d5546-0a6e-4183-92d2-4720ed3c2795}</Project>
+      <Name>EffectSourceConditions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HolyDamageManager\HolyDamageManager.csproj">
       <Project>{871a4a4a-70c0-4995-8b51-5815c7ec432d}</Project>
       <Name>HolyDamageManager</Name>
@@ -118,6 +122,10 @@
     <Compile Include="Items\HolyAvenger.cs" />
     <Compile Include="Items\HolyWaterItem.cs" />
     <Compile Include="CrusadersEquipment.cs" />
+    <Compile Include="Items\.cs" />
+    <Compile Include="Items\Capitalizer.cs" />
+    <Compile Include="Items\RadiantSpark.cs" />
+    <Compile Include="Items\PurgingFlame.cs" />
     <Compile Include="Items\ThickWhitePaint.cs" />
     <Compile Include="Items\ZealotsArmor.cs" />
     <Compile Include="Items\ZealotsBoots.cs" />
