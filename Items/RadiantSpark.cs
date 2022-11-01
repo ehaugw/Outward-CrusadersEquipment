@@ -4,8 +4,9 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 
-namespace Crusader
+namespace CrusadersEquipment
 {
+    using Crusader;
     using EffectSourceConditions;
 
     public class RadiantSpark
