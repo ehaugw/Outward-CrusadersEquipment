@@ -55,6 +55,7 @@
 
         public Item purgingFlameInstance;
         public Item capitalizerInstance;
+        public Item talismanOfRecoveryInstance;
 
         internal void Awake()
         {
@@ -81,6 +82,7 @@
 
             purgingFlameInstance = PurgingFlame.MakeItem();
             capitalizerInstance = Capitalizer.MakeItem();
+            talismanOfRecoveryInstance = TalismanOfRecovery.MakeItem();
 
             divineLongswordRecipeInstance = DivineLongsword.MakeRecipes();
             holyAvengerRecipeInstance = HolyAvenger.MakeRecipes();
