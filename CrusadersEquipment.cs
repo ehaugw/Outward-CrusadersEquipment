@@ -37,6 +37,10 @@
         public Item holyAvengerRecipeInstance;
         public Item adamantineIngotRecipeInstance;
 
+        public Item talismanOfRecoveryRecipeInstance;
+        public Item obsidianAmuletRecipeInstance;
+        public Item alphaTuanosaurTrinketRecipeInstance;
+
         public Item crusadersArmorInstance;
         public Item crusadersRoundShieldInstance;
         public Item crusadersShieldInstance;
@@ -90,6 +94,10 @@
 
             holyWaterInstance = HolyWaterItem.MakeItem();
             holyWaterRecipeInstance = HolyWaterItem.MakeRecipe();
+
+            talismanOfRecoveryRecipeInstance = TalismanOfRecovery.MakeRecipe();
+            alphaTuanosaurTrinketRecipeInstance = AlphaTuanosaurTrinket.MakeRecipe();
+            obsidianAmuletRecipeInstance = ObsidianAmulet.MakeRecipe();
         }
 
         private void OnSceneLoaded()

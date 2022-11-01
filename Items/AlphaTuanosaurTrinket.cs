@@ -10,13 +10,14 @@ namespace CrusadersEquipment
     public class AlphaTuanosaurTrinket
     {
         public const string SubfolderName = "AlphaTuanosaurTrinket";
+        public const string ItemName = "Alpha Tuanosaur Trinket";
 
         public static Item MakeItem()
         {
 
             var myitem = new SL_Item()
             {
-                Name = "Alpha Tuanosaur Trinket",
+                Name = ItemName,
                 Target_ItemID = IDs.lexiconID,
                 New_ItemID = IDs.alphaTuanosaurTrinketID,
                 EffectBehaviour = EditBehaviours.Override,
@@ -44,6 +45,37 @@ namespace CrusadersEquipment
 
 
             return item as Item;
+        }
+
+        public static Item MakeRecipe()
+        {
+            string newUID = CrusadersEquipment.GUID + "." + SubfolderName.ToLower() + "recipe";
+            new SL_Recipe()
+            {
+                StationType = Recipe.CraftingType.Survival,
+                Results = new List<SL_Recipe.ItemQty>() {
+                    new SL_Recipe.ItemQty() { Quantity = 1, ItemID = IDs.alphaTuanosaurTrinketID },
+                },
+                Ingredients = new List<SL_Recipe.Ingredient>() {
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.linenClothID },
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.palladiumScrapsID },
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.alphaTuanosaurTailID}
+                },
+                UID = newUID,
+            }.ApplyTemplate();
+
+            var myitem = new SL_RecipeItem()
+            {
+                Name = "Crafting: " + ItemName,
+                Target_ItemID = IDs.arbitrarySurvivalRecipeID,
+                New_ItemID = IDs.alphaTuanosaurTrinketRecipeID,
+                EffectBehaviour = EditBehaviours.Override,
+                RecipeUID = newUID
+            };
+            myitem.ApplyTemplate();
+            var item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
+
+            return item;
         }
     }
 }
