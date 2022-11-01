@@ -6,20 +6,20 @@ namespace CrusadersEquipment
     using InstanceIDs;
     using SideLoader;
 
-    public class PurgingFlame
+    public class ObsidianAmulet
     {
-        public const string SubfolderName = "PurgingFlame";
+        public const string SubfolderName = "ObsidianAmulet";
 
         public static Item MakeItem()
         {
 
             var myitem = new SL_Item()
             {
-                Name = "Purging Flame",
+                Name = "Obsidian Amulet",
                 Target_ItemID = IDs.lexiconID,
-                New_ItemID = IDs.purgingFlameTrinketID,
+                New_ItemID = IDs.obsidianAmuletID,
                 EffectBehaviour = EditBehaviours.Override,
-                Description = "A trinket that causes spark to apply and spread Impending Doom.",
+                Description = "An ornament crafted from fire-infused glass. Causes spark to apply and spread Impending Doom.",
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     "Trinket",

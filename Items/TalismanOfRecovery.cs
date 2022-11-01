@@ -9,7 +9,7 @@ namespace CrusadersEquipment
 
     public class TalismanOfRecovery
     {
-        public const string SubfolderName = "Capitalizer";
+        public const string SubfolderName = "TalismanOfRecovery";
 
         public static Item MakeItem()
         {
@@ -18,7 +18,7 @@ namespace CrusadersEquipment
             {
                 Name = "Talisman of Recovery",
                 Target_ItemID = IDs.lexiconID,
-                New_ItemID = IDs.talismanOfRecoveryTrinketID,
+                New_ItemID = IDs.talismanOfRecoveryID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "A trinket that causes cure wounds to restore some burnt health.",
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
@@ -43,7 +43,7 @@ namespace CrusadersEquipment
 
             var requirementTransform = TinyGameObjectManager.GetOrMake(effects.transform, EffectSourceConditions.SOURCE_CONDITION_CONTAINER, true, true);
             var skillReq = requirementTransform.gameObject.AddComponent<SourceConditionEquipment>();
-            skillReq.RequiredItemID = IDs.talismanOfRecoveryTrinketID;
+            skillReq.RequiredItemID = IDs.talismanOfRecoveryID;
 
 
             return item as Item;

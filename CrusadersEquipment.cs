@@ -19,7 +19,7 @@
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "2.2.0";
+        public const string VERSION = "3.0.0";
         public const string NAME = "Crusaders Equipment";
 
         public const string sideloaderFolder = "CrusadersEquipment";
@@ -80,8 +80,8 @@
             lightMendersRelicInstance = AncientRelic.MakeItem();
             adamantineIngotInstance = AdamantineIngot.MakeItem();
 
-            purgingFlameInstance = PurgingFlame.MakeItem();
-            capitalizerInstance = Capitalizer.MakeItem();
+            purgingFlameInstance = ObsidianAmulet.MakeItem();
+            capitalizerInstance = AlphaTuanosaurTrinket.MakeItem();
             talismanOfRecoveryInstance = TalismanOfRecovery.MakeItem();
 
             divineLongswordRecipeInstance = DivineLongsword.MakeRecipes();

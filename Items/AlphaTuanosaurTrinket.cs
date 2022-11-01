@@ -7,20 +7,20 @@ namespace CrusadersEquipment
     using SideLoader;
     using EffectSourceConditions;
 
-    public class Capitalizer
+    public class AlphaTuanosaurTrinket
     {
-        public const string SubfolderName = "Capitalizer";
+        public const string SubfolderName = "AlphaTuanosaurTrinket";
 
         public static Item MakeItem()
         {
 
             var myitem = new SL_Item()
             {
-                Name = "Capitalizer",
+                Name = "Alpha Tuanosaur Trinket",
                 Target_ItemID = IDs.lexiconID,
-                New_ItemID = IDs.capitalizerTrinketID,
+                New_ItemID = IDs.alphaTuanosaurTrinketID,
                 EffectBehaviour = EditBehaviours.Override,
-                Description = "A trinket that causes the cooldown of Wrathful Smite to reset if used on a prone target.",
+                Description = "A trinket made from a tail bone of an apex predator. Causes the cooldown of Wrathful Smite to reset if used on a prone target.",
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     "Trinket",
@@ -40,7 +40,7 @@ namespace CrusadersEquipment
 
             var requirementTransform = TinyGameObjectManager.GetOrMake(hitEffects.transform, EffectSourceConditions.SOURCE_CONDITION_CONTAINER, true, true);
             var skillReq = requirementTransform.gameObject.AddComponent<SourceConditionEquipment>();
-            skillReq.RequiredItemID = IDs.capitalizerTrinketID;
+            skillReq.RequiredItemID = IDs.alphaTuanosaurTrinketID;
 
 
             return item as Item;

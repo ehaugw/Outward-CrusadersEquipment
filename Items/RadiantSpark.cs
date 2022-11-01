@@ -36,7 +36,7 @@ namespace CrusadersEquipment
 
             var requirementTransform = TinyGameObjectManager.GetOrMake(addThenSpread.transform, EffectSourceConditions.SOURCE_CONDITION_CONTAINER, true, true);
             var skillReq = requirementTransform.gameObject.AddComponent<SourceConditionEquipment>();
-            skillReq.RequiredItemID = IDs.purgingFlameTrinketID;
+            skillReq.RequiredItemID = IDs.obsidianAmuletID;
 
             //need two stacks because one is consumed
             //var requirementTransform = TinyGameObjectManager.GetOrMake(addThenSpread.transform, EffectSourceConditions.SOURCE_CONDITION_CONTAINER, true, true);
