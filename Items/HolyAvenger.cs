@@ -12,7 +12,7 @@ namespace CrusadersEquipment
     public class HolyAvenger
     {
         public const string SubfolderName = "HolyAvenger";
-        public const string ItemName = "Crusader's Bastard Sword";
+        public const string ItemName = "Puresteel Longsword";
 
         //private static Item[] testItem;
         
@@ -24,7 +24,7 @@ namespace CrusadersEquipment
                 Name = ItemName,
                 Target_ItemID = IDs.ironSwordID,
                 New_ItemID = IDs.holyAvengerID,
-                Description = "Has a small chance to inflict and even spread Impending Doom among your foes.",
+                Description = "Has a small chance to inflict and spread Impending Doom among your foes.",
 
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {

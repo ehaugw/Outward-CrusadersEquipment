@@ -8,7 +8,7 @@ namespace CrusadersEquipment
     public class AdamantineIngot
     {
         public const string SubfolderName = "AdamantineIngot";
-        public const string ItemName = "Adamantine Ingot";
+        public const string ItemName = "Puresteel Ingot";
 
         public static Item MakeItem()
         {
@@ -18,7 +18,7 @@ namespace CrusadersEquipment
                 Target_ItemID = IDs.elattsRelicID,
                 New_ItemID = IDs.adamantineID,
                 EffectBehaviour = EditBehaviours.Override,
-                Description = "A sizable ignot made of pure adamantine.",
+                Description = "A sizable ignot made of puresteel.",
                 SLPackName = CrusadersEquipment.sideloaderFolder,
                 SubfolderName = SubfolderName,
 
