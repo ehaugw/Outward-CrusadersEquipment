@@ -42,6 +42,7 @@
         public Item alphaTuanosaurTrinketRecipeInstance;
 
         public Item crusadersArmorInstance;
+        public Item crusadersPlateArmorInstance;
         public Item crusadersRoundShieldInstance;
         public Item crusadersShieldInstance;
         public Item thickWhitePaintInstance;
@@ -52,13 +53,14 @@
         public Item crusadersShieldRecipeInstance;
         public Item crusadersRoundShieldRecipeInstance;
         public Item crusadersArmorRecipeInstance;
+        public Item crusadersPlateArmorRecipeInstance; 
         public Item crusadersHoodRecipeInstance;
         public Item crusadersBootsRecipeInstance;
         public Item zealotsArmorInstance;
         public Item zealotsBootsInstance;
 
-        public Item purgingFlameInstance;
-        public Item capitalizerInstance;
+        public Item obsidianAmuletInstance;
+        public Item alphaTuanosaurTrinketInstance;
         public Item talismanOfRecoveryInstance;
 
         internal void Awake()
@@ -66,7 +68,7 @@
             Instance = this;
 
             SL.OnPacksLoaded += OnPackLoaded;
-            SL.OnSceneLoaded += OnSceneLoaded;
+            //SL.OnSceneLoaded += OnSceneLoaded;
 
             SL.OnPacksLoaded += OnPackLoadedEquipment;
             SL.OnSceneLoaded += OnSceneLoadedEquipment;
@@ -84,8 +86,8 @@
             lightMendersRelicInstance = AncientRelic.MakeItem();
             adamantineIngotInstance = AdamantineIngot.MakeItem();
 
-            purgingFlameInstance = ObsidianAmulet.MakeItem();
-            capitalizerInstance = AlphaTuanosaurTrinket.MakeItem();
+            obsidianAmuletInstance = ObsidianAmulet.MakeItem();
+            alphaTuanosaurTrinketInstance = AlphaTuanosaurTrinket.MakeItem();
             talismanOfRecoveryInstance = TalismanOfRecovery.MakeItem();
 
             divineLongswordRecipeInstance = DivineLongsword.MakeRecipes();
@@ -100,43 +102,44 @@
             obsidianAmuletRecipeInstance = ObsidianAmulet.MakeRecipe();
         }
 
-        private void OnSceneLoaded()
-        {
-            if (GameObject.Find("UNPC_LaineAberforthA")?.GetComponentsInChildren<GuaranteedDrop>()?.FirstOrDefault(table => table.ItemGenatorName == "Recipes") is GuaranteedDrop recipeTableLaine)
-            {
-                if (At.GetField<GuaranteedDrop>(recipeTableLaine, "m_itemDrops") is List<BasicItemDrop> drops)
-                {
-                    foreach (Item item in new Item[] { holyWaterRecipeInstance })
-                    {
-                        //Used to say DroppedItem = item
-                        drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });
-                    }
-                }
-            }
+        //private void OnSceneLoaded()
+        //{
+        //    if (GameObject.Find("UNPC_LaineAberforthA")?.GetComponentsInChildren<GuaranteedDrop>()?.FirstOrDefault(table => table.ItemGenatorName == "Recipes") is GuaranteedDrop recipeTableLaine)
+        //    {
+        //        if (At.GetField<GuaranteedDrop>(recipeTableLaine, "m_itemDrops") is List<BasicItemDrop> drops)
+        //        {
+        //            foreach (Item item in new Item[] { holyWaterRecipeInstance })
+        //            {
+        //                //Used to say DroppedItem = item
+        //                drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });
+        //            }
+        //        }
+        //    }
 
-            foreach (GameObject obj in Resources.FindObjectsOfTypeAll<GameObject>())
-            {
-                // Add holy sword recipes to Vyzyrinthrix
-                if (obj.name == "HumanSNPC_Blacksmith" && (obj.GetComponentInChildren<Merchant>()?.ShopName ?? "") == "Vyzyrinthrix the Blacksmith")
-                {
-                    if (obj.GetComponentsInChildren<GuaranteedDrop>()?.FirstOrDefault(table => table.ItemGenatorName == "Recipes") is GuaranteedDrop recipes)
-                    {
-                        if (At.GetField<GuaranteedDrop>(recipes, "m_itemDrops") is List<BasicItemDrop> drops)
-                        {
-                            foreach (var item in new Item[] { holyAvengerRecipeInstance, divineLongswordRecipeInstance, adamantineIngotRecipeInstance })
-                            {
-                                //Used to say DroppedItem = item
-                                drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        //    foreach (GameObject obj in Resources.FindObjectsOfTypeAll<GameObject>())
+        //    {
+        //        // Add holy sword recipes to Vyzyrinthrix
+        //        if (obj.name == "HumanSNPC_Blacksmith" && (obj.GetComponentInChildren<Merchant>()?.ShopName ?? "") == "Vyzyrinthrix the Blacksmith")
+        //        {
+        //            if (obj.GetComponentsInChildren<GuaranteedDrop>()?.FirstOrDefault(table => table.ItemGenatorName == "Recipes") is GuaranteedDrop recipes)
+        //            {
+        //                if (At.GetField<GuaranteedDrop>(recipes, "m_itemDrops") is List<BasicItemDrop> drops)
+        //                {
+        //                    foreach (var item in new Item[] { holyAvengerRecipeInstance, divineLongswordRecipeInstance, adamantineIngotRecipeInstance })
+        //                    {
+        //                        //Used to say DroppedItem = item
+        //                        drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
 
         private void OnPackLoadedEquipment()
         {
             crusadersArmorInstance = CrusadersArmor.MakeItem();
+            crusadersPlateArmorInstance = CrusadersPlateArmor.MakeItem();
             crusadersHoodInstance = CrusadersHood.MakeItem();
             crusadersBootsInstance = CrusadersBoots.MakeItem();
             crusadersRoundShieldInstance = CrusadersRoundShield.MakeItem();
@@ -146,6 +149,7 @@
             zealotsBootsInstance = ZealotsBoots.MakeItem();
 
             crusadersArmorRecipeInstance = CrusadersArmor.MakeRecipes();
+            crusadersPlateArmorRecipeInstance = CrusadersPlateArmor.MakeRecipes();
             crusadersHoodRecipeInstance = CrusadersHood.MakeRecipes();
             crusadersBootsRecipeInstance = CrusadersBoots.MakeRecipes();
             crusadersRoundShieldRecipeInstance = CrusadersRoundShield.MakeRecipes();
@@ -163,7 +167,7 @@
                 {
                     if (At.GetField<GuaranteedDrop>(recipeTableBlacksmith, "m_itemDrops") is List<BasicItemDrop> drops)
                     {
-                        foreach (Item item in new Item[] { crusadersArmorRecipeInstance, crusadersShieldRecipeInstance, crusadersRoundShieldRecipeInstance, crusadersHoodRecipeInstance, crusadersBootsRecipeInstance })
+                        foreach (Item item in new Item[] { holyAvengerRecipeInstance, divineLongswordRecipeInstance, adamantineIngotRecipeInstance, crusadersArmorRecipeInstance, crusadersPlateArmorRecipeInstance, crusadersShieldRecipeInstance, crusadersRoundShieldRecipeInstance, crusadersHoodRecipeInstance, crusadersBootsRecipeInstance })
                         {
                             //Used to say DroppedItem = item
                             drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });
@@ -176,7 +180,7 @@
             {
                 if (At.GetField<GuaranteedDrop>(recipeTableLaine, "m_itemDrops") is List<BasicItemDrop> drops)
                 {
-                    foreach (Item item in new Item[] { thickWhitePaintRecipeInstance })
+                    foreach (Item item in new Item[] { holyWaterRecipeInstance, thickWhitePaintRecipeInstance })
                     {
                         //Used to say DroppedItem = item
                         drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });
@@ -190,7 +194,7 @@
                 {
                     if (At.GetField<GuaranteedDrop>(recipeTableMathias, "m_itemDrops") is List<BasicItemDrop> drops)
                     {
-                        foreach (Item item in new Item[] { zealotsArmorInstance, zealotsBootsInstance, crusadersArmorInstance, crusadersBootsInstance, crusadersHoodInstance })
+                        foreach (Item item in new Item[] { zealotsArmorInstance, zealotsBootsInstance, crusadersArmorInstance, crusadersBootsInstance, crusadersHoodInstance, talismanOfRecoveryInstance, alphaTuanosaurTrinketInstance, obsidianAmuletInstance })
                         {
                             //Used to say DroppedItem = item
                             drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });

@@ -113,6 +113,7 @@
   <ItemGroup>
     <Compile Include="Items\AdamantineIngot.cs" />
     <Compile Include="Items\AncientRelic.cs" />
+    <Compile Include="Items\CrusadersPlateArmor.cs" />
     <Compile Include="Items\TalismanOfRecovery.cs" />
     <Compile Include="Items\CrusadersArmor.cs" />
     <Compile Include="Items\CrusadersBoots.cs" />

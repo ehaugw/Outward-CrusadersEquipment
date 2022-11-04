@@ -23,6 +23,12 @@ assemble:
 	cp resources/icons/adamantine_ingot.png                 public/$(sideloaderpath)/Items/AdamantineIngot/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/AncientRelic/Textures
 	cp resources/icons/ancient_relic.png                    public/$(sideloaderpath)/Items/AncientRelic/Textures/icon.png
+	mkdir -p public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/mat_cha_runicArmor
+	cp resources/icons/crusaders_plate_armor.png            public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/icon.png
+	cp resources/textures/crusaders_plate_armor_gen.png     public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/mat_cha_runicArmor/_GenTex.png
+	cp resources/textures/crusaders_plate_armor_main.png    public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/mat_cha_runicArmor/_MainTex.png
+	cp resources/textures/crusaders_plate_armor_norm.png    public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/mat_cha_runicArmor/_NormTex.png
+	cp resources/textures/crusaders_plate_armor.xml         public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/mat_cha_runicArmor/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/CrusadersArmor/Textures/mat_cha_armorKaziteA
 	cp resources/icons/crusaders_armor.png                  public/$(sideloaderpath)/Items/CrusadersArmor/Textures/icon.png
 	cp resources/textures/crusaders_armor_gen.png           public/$(sideloaderpath)/Items/CrusadersArmor/Textures/mat_cha_armorKaziteA/_GenTex.png
