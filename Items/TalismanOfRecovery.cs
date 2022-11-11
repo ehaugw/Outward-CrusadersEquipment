@@ -10,7 +10,7 @@ namespace CrusadersEquipment
     public class TalismanOfRecovery
     {
         public const string SubfolderName = "TalismanOfRecovery";
-        public const string ItemName = "Talisman of Recovery";
+        public const string ItemName = "Gold Lich Talisman";
 
         public static Item MakeItem()
         {
@@ -22,6 +22,10 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.talismanOfRecoveryID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "Crafted from a mechanism from the Light Mender's minions. Causes cure wounds to restore some burnt health.",
+                StatsHolder = new SL_ItemStats()
+                {
+                    BaseValue = 800 // gold lich equipment is also 800, but gold bars are easier to obtain than sword / shield while in hallowed marsh
+                },
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     "Trinket",
@@ -62,7 +66,8 @@ namespace CrusadersEquipment
                 Ingredients = new List<SL_Recipe.Ingredient>() {
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.linenClothID },
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.goldIngotID },
-                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.goldlichMechanismID}
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.goldlichMechanismID},
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.fireflyPowderID}
                 },
                 UID = newUID,
             }.ApplyTemplate();
