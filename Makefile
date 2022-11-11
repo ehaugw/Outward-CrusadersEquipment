@@ -54,26 +54,12 @@ assemble:
 	cp resources/icons/crusaders_shield.png                 public/$(sideloaderpath)/Items/CrusadersShield/Textures/icon.png
 	cp resources/textures/crusaders_shield_main.png         public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/_MainTex.png
 	cp resources/textures/crusaders_shield.xml              public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/properties.xml
-	mkdir -p public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material
-	cp resources/icons/holy_avenger_no_inscription.png      public/$(sideloaderpath)/Items/DivineLongsword/Textures/icon.png
-	cp resources/textures/divine_longsword_gen.png          public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material/_GenTex.png
-	cp resources/textures/divine_longsword_main.png         public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material/_MainTex.png
-	cp resources/textures/divine_longsword_norm.png         public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material/_NormTex.png
-	cp resources/textures/divine_longsword_spec.png         public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material/_SpecColorTex.png
-	cp resources/textures/divine_longsword.xml              public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material
 	cp resources/icons/holy_avenger_no_inscription.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/icon.png
-	# exported from substance painter, but with outward overlay
 	cp resources/artsource/exports/holyavenger/_GenTex.png       public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_GenTex.png
 	cp resources/artsource/exports/holyavenger/_MainTex.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_MainTex.png
 	cp resources/artsource/exports/holyavenger/_NormTex.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_NormTex.png
 	cp resources/artsource/exports/holyavenger/_SpecColorTex.png public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_SpecColorTex.png
-	# from old computer
-	# cp resources/textures/holy_avenger_gen.png              public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_GenTex.png
-	# cp resources/textures/holy_avenger_main.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_MainTex.png
-	# cp resources/textures/holy_avenger_norm.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_NormTex.png
-	# cp resources/textures/holy_avenger_spec.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_SpecColorTex.png
-	# cp resources/textures/holy_avenger_glow.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_EmissionTex.png
 	cp resources/textures/holy_avenger.xml                  public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HolyWater/Textures
 	cp resources/icons/holy_water.png                       public/$(sideloaderpath)/Items/HolyWater/Textures/icon.png
