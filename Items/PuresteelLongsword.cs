@@ -9,9 +9,9 @@ namespace CrusadersEquipment
     using System.Linq;
     using UnityEngine;
 
-    public class HolyAvenger
+    public class PuresteelLongsword
     {
-        public const string SubfolderName = "HolyAvenger";
+        public const string SubfolderName = "PuresteelLongsword";
         public const string ItemName = "Puresteel Longsword";
 
         //private static Item[] testItem;
@@ -23,7 +23,7 @@ namespace CrusadersEquipment
             {
                 Name = ItemName,
                 Target_ItemID = IDs.ironSwordID,
-                New_ItemID = IDs.holyAvengerID,
+                New_ItemID = IDs.puresteelLongswordID,
                 Description = "Has a small chance to inflict and spread Impending Doom among your foes.",
 
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
@@ -44,13 +44,6 @@ namespace CrusadersEquipment
                     BaseDamage = new List<SL_Damage>() { new SL_Damage() { Damage = weaponData[3], Type = DamageType.Types.Physical } },
                     Impact = weaponData[1],
                     AutoGenerateAttackData = true,
-                    //Attacks = new[] {
-                    //        HolyAvengerItemPack.MakeAttackData(ha[0], ha[1], ha[2],         ha[3], 1,       1),
-                    //        HolyAvengerItemPack.MakeAttackData(ha[0], ha[1], ha[2],         ha[3], 1,       1),
-                    //        HolyAvengerItemPack.MakeAttackData(ha[0], ha[1], ha[2] + 0.1f,  ha[3], 1.2f,    1.3f),
-                    //        HolyAvengerItemPack.MakeAttackData(ha[0], ha[1], ha[2] + 0.1f,  ha[3], 1.1f,    1.1f),
-                    //        HolyAvengerItemPack.MakeAttackData(ha[0], ha[1], ha[2] + 0.1f,  ha[3], 1.1f,    1.1f)
-                    //    }
                 },
                 EffectTransforms = new SL_EffectTransform[] {
                     new SL_EffectTransform() {
@@ -64,7 +57,7 @@ namespace CrusadersEquipment
                 SLPackName = CrusadersEquipment.sideloaderFolder,
                 SubfolderName = SubfolderName,
 
-                ItemVisuals = new SL_ItemVisual() { Prefab_Name = "holyavenger_Prefab", Prefab_AssetBundle = "holyavenger", Prefab_SLPack = CrusadersEquipment.sideloaderFolder, PositionOffset = new UnityEngine.Vector3(-0.03f, 0,0)},
+                ItemVisuals = new SL_ItemVisual() { Prefab_Name = "puresteel_longsword_Prefab", Prefab_AssetBundle = "puresteel_longsword", Prefab_SLPack = CrusadersEquipment.sideloaderFolder, PositionOffset = new UnityEngine.Vector3(-0.03f, 0,0)},
             };
 
             myitem.ApplyTemplate();
@@ -95,7 +88,7 @@ namespace CrusadersEquipment
             {
                 StationType = Recipe.CraftingType.Survival,
                 Results = new List<SL_Recipe.ItemQty>() {
-                    new SL_Recipe.ItemQty() { Quantity = 1, ItemID = IDs.holyAvengerID },
+                    new SL_Recipe.ItemQty() { Quantity = 1, ItemID = IDs.puresteelLongswordID },
                 },
                 Ingredients = new List<SL_Recipe.Ingredient>() {
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.ancientRelicID },
@@ -110,7 +103,7 @@ namespace CrusadersEquipment
             {
                 Name = "Crafting: " + ItemName,
                 Target_ItemID = IDs.arbitrarySurvivalRecipeID,
-                New_ItemID = IDs.holyAvengerRecipeID,
+                New_ItemID = IDs.puresteelLongswordRecipeID,
                 EffectBehaviour = EditBehaviours.Override,
                 RecipeUID = newUID
             };

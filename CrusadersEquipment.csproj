@@ -120,8 +120,7 @@
     <Compile Include="Items\CrusadersHood.cs" />
     <Compile Include="Items\CrusadersRoundShield.cs" />
     <Compile Include="Items\CrusadersShield.cs" />
-    <Compile Include="Items\DivineLongsword.cs" />
-    <Compile Include="Items\HolyAvenger.cs" />
+    <Compile Include="Items\PuresteelLongsword.cs" />
     <Compile Include="Items\HolyWaterItem.cs" />
     <Compile Include="CrusadersEquipment.cs" />
     <Compile Include="Items\AlphaTuanosaurTrinket.cs" />

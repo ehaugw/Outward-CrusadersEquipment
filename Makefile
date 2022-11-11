@@ -54,13 +54,13 @@ assemble:
 	cp resources/icons/crusaders_shield.png                 public/$(sideloaderpath)/Items/CrusadersShield/Textures/icon.png
 	cp resources/textures/crusaders_shield_main.png         public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/_MainTex.png
 	cp resources/textures/crusaders_shield.xml              public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/properties.xml
-	mkdir -p public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material
-	cp resources/icons/holy_avenger_no_inscription.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/icon.png
-	cp resources/artsource/exports/holyavenger/_GenTex.png       public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_GenTex.png
-	cp resources/artsource/exports/holyavenger/_MainTex.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_MainTex.png
-	cp resources/artsource/exports/holyavenger/_NormTex.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_NormTex.png
-	cp resources/artsource/exports/holyavenger/_SpecColorTex.png public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_SpecColorTex.png
-	cp resources/textures/holy_avenger.xml                  public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/properties.xml
+	mkdir -p public/$(sideloaderpath)/Items/PuresteelLongsword/Textures/puresteel_longsword_Material
+	cp resources/icons/holy_avenger_no_inscription.png                   public/$(sideloaderpath)/Items/PuresteelLongsword/Textures/icon.png
+	cp resources/artsource/exports/puresteel_longsword/_GenTex.png       public/$(sideloaderpath)/Items/PuresteelLongsword/Textures/puresteel_longsword_Material/_GenTex.png
+	cp resources/artsource/exports/puresteel_longsword/_MainTex.png      public/$(sideloaderpath)/Items/PuresteelLongsword/Textures/puresteel_longsword_Material/_MainTex.png
+	cp resources/artsource/exports/puresteel_longsword/_NormTex.png      public/$(sideloaderpath)/Items/PuresteelLongsword/Textures/puresteel_longsword_Material/_NormTex.png
+	cp resources/artsource/exports/puresteel_longsword/_SpecColorTex.png public/$(sideloaderpath)/Items/PuresteelLongsword/Textures/puresteel_longsword_Material/_SpecColorTex.png
+	cp resources/textures/properties_color_spec.xml                      public/$(sideloaderpath)/Items/PuresteelLongsword/Textures/puresteel_longsword_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HolyWater/Textures
 	cp resources/icons/holy_water.png                       public/$(sideloaderpath)/Items/HolyWater/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/ThickWhitePaint/Textures/mat_env_propSlimeVilePus
@@ -77,8 +77,7 @@ assemble:
 	cp resources/textures/zealots_armor.xml                  public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/properties.xml
 	cp resources/textures/zealots_armor_glow.xml             public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/properties\ -\ Glow.xml
 	
-	cp resources/unity/HolyAvengerBastard/Assets/AssetBundles/holyavenger	public/$(sideloaderpath)/AssetBundles/
-	cp resources/assetbundles/keenlongsword                   public/$(sideloaderpath)/AssetBundles/
+	cp resources/unity/HolyAvengerBastard/Assets/AssetBundles/puresteel_longsword                    public/$(sideloaderpath)/AssetBundles/
 	
 publish:
 	make assemble
@@ -97,8 +96,8 @@ info:
 	echo Modname: $(modname)
 
 unity:
-	cp resources/artsource/holyavenger_Model.fbx resources/unity/HolyAvengerBastard/Assets/holyavenger_Model.fbx
-	cp resources/artsource/exports/holyavenger/holyavenger_Model_holyavenger_Material_AlbedoTransparency.png    resources/unity/HolyAvengerBastard/Assets/AlbedoTransparency.png
-	cp resources/artsource/exports/holyavenger/holyavenger_Model_holyavenger_Material_MetallicSmoothness.png    resources/unity/HolyAvengerBastard/Assets/MetallicSmoothness.png
-	cp resources/artsource/exports/holyavenger/holyavenger_Model_holyavenger_Material_Normal.png                resources/unity/HolyAvengerBastard/Assets/Normal.png
+	cp resources/artsource/puresteel_longsword.fbx                                                   resources/unity/HolyAvengerBastard/Assets/puresteel_longsword.fbx
+	cp resources/artsource/exports/puresteel_longsword/puresteel_longsword_AlbedoTransparency.png    resources/unity/HolyAvengerBastard/Assets/puresteel_longsword_AlbedoTransparency.png
+	cp resources/artsource/exports/puresteel_longsword/puresteel_longsword_MetallicSmoothness.png    resources/unity/HolyAvengerBastard/Assets/puresteel_longsword_MetallicSmoothness.png
+	cp resources/artsource/exports/puresteel_longsword/puresteel_longsword_Normal.png                resources/unity/HolyAvengerBastard/Assets/puresteel_longsword_Normal.png
 

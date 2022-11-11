@@ -27,12 +27,12 @@
         public Item holyWaterInstance;
         public Item holyWaterRecipeInstance;
 
-        public Item holyAvengerInstance;
+        public Item puresteelLongswordInstance;
         public Item lightMendersRelicInstance;
         public Item adamantineIngotInstance;
 
         public Item blessedLongswordRecipeInstance;
-        public Item holyAvengerRecipeInstance;
+        public Item puresteelLongswordRecipeInstance;
         public Item adamantineIngotRecipeInstance;
 
         public Item talismanOfRecoveryRecipeInstance;
@@ -78,7 +78,7 @@
 
         private void OnPackLoaded()
         {
-            holyAvengerInstance = HolyAvenger.MakeItem();
+            puresteelLongswordInstance = PuresteelLongsword.MakeItem();
             lightMendersRelicInstance = AncientRelic.MakeItem();
             adamantineIngotInstance = AdamantineIngot.MakeItem();
 
@@ -86,7 +86,7 @@
             alphaTuanosaurTrinketInstance = AlphaTuanosaurTrinket.MakeItem();
             talismanOfRecoveryInstance = TalismanOfRecovery.MakeItem();
 
-            holyAvengerRecipeInstance = HolyAvenger.MakeRecipes();
+            puresteelLongswordRecipeInstance = PuresteelLongsword.MakeRecipes();
             adamantineIngotRecipeInstance = AdamantineIngot.MakeRecipes();
 
             holyWaterInstance = HolyWaterItem.MakeItem();
@@ -129,7 +129,7 @@
                 {
                     if (At.GetField<GuaranteedDrop>(recipeTableBlacksmith, "m_itemDrops") is List<BasicItemDrop> drops)
                     {
-                        foreach (Item item in new Item[] { holyAvengerRecipeInstance, adamantineIngotRecipeInstance, crusadersArmorRecipeInstance, crusadersPlateArmorRecipeInstance, crusadersShieldRecipeInstance, crusadersRoundShieldRecipeInstance, crusadersHoodRecipeInstance, crusadersBootsRecipeInstance })
+                        foreach (Item item in new Item[] { puresteelLongswordRecipeInstance, adamantineIngotRecipeInstance, crusadersArmorRecipeInstance, crusadersPlateArmorRecipeInstance, crusadersShieldRecipeInstance, crusadersRoundShieldRecipeInstance, crusadersHoodRecipeInstance, crusadersBootsRecipeInstance })
                         {
                             //Used to say DroppedItem = item
                             drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });
