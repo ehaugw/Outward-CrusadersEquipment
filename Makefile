@@ -62,12 +62,16 @@ assemble:
 	cp resources/textures/divine_longsword_spec.png         public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material/_SpecColorTex.png
 	cp resources/textures/divine_longsword.xml              public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material
-	cp resources/icons/holy_avenger.png                     public/$(sideloaderpath)/Items/HolyAvenger/Textures/icon.png
-	cp resources/textures/holy_avenger_gen.png              public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_GenTex.png
-	cp resources/textures/holy_avenger_main.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_MainTex.png
-	cp resources/textures/holy_avenger_norm.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_NormTex.png
-	cp resources/textures/holy_avenger_spec.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_SpecColorTex.png
-	cp resources/textures/holy_avenger_glow.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_EmissionTex.png
+	cp resources/icons/holy_avenger_no_inscription.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/icon.png
+	cp resources/artsource/exports/holyavenger/_GenTex.png       public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_GenTex.png
+	cp resources/artsource/exports/holyavenger/_MainTex.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_MainTex.png
+	cp resources/artsource/exports/holyavenger/_NormTex.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_NormTex.png
+	cp resources/artsource/exports/holyavenger/_SpecColorTex.png public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_SpecColorTex.png
+	# cp resources/textures/holy_avenger_gen.png              public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_GenTex.png
+	# cp resources/textures/holy_avenger_main.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_MainTex.png
+	# cp resources/textures/holy_avenger_norm.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_NormTex.png
+	# cp resources/textures/holy_avenger_spec.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_SpecColorTex.png
+	# cp resources/textures/holy_avenger_glow.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_EmissionTex.png
 	cp resources/textures/holy_avenger.xml                  public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HolyWater/Textures
 	cp resources/icons/holy_water.png                       public/$(sideloaderpath)/Items/HolyWater/Textures/icon.png
@@ -85,14 +89,7 @@ assemble:
 	cp resources/textures/zealots_armor.xml                  public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/properties.xml
 	cp resources/textures/zealots_armor_glow.xml             public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/properties\ -\ Glow.xml
 	
-	# cp resources/textures/burstOfDivinityIcon.png           public/$(sideloaderpath)/Texture2D/
-	# cp resources/textures/healingSurgeIcon.png              public/$(sideloaderpath)/Texture2D/
-	# cp resources/textures/impendingDoomIcon.png             public/$(sideloaderpath)/Texture2D/
-	# cp resources/textures/impendingDoomImbueIcon.png        public/$(sideloaderpath)/Texture2D/
-	# cp resources/textures/radiatingIcon.png                 public/$(sideloaderpath)/Texture2D/
-	# cp resources/textures/surgeOfDivinityIcon.png           public/$(sideloaderpath)/Texture2D/
-	# 
-	cp resources/assetbundles/holyavenger                     public/$(sideloaderpath)/AssetBundles/
+	cp resources/unity/HolyAvengerBastard/Assets/AssetBundles/holyavenger	public/$(sideloaderpath)/AssetBundles/
 	cp resources/assetbundles/keenlongsword                   public/$(sideloaderpath)/AssetBundles/
 	
 publish:
