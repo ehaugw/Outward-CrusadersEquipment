@@ -63,10 +63,12 @@ assemble:
 	cp resources/textures/divine_longsword.xml              public/$(sideloaderpath)/Items/DivineLongsword/Textures/keenlongsword_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material
 	cp resources/icons/holy_avenger_no_inscription.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/icon.png
+	# exported from substance painter, but with outward overlay
 	cp resources/artsource/exports/holyavenger/_GenTex.png       public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_GenTex.png
 	cp resources/artsource/exports/holyavenger/_MainTex.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_MainTex.png
 	cp resources/artsource/exports/holyavenger/_NormTex.png      public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_NormTex.png
 	cp resources/artsource/exports/holyavenger/_SpecColorTex.png public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_SpecColorTex.png
+	# from old computer
 	# cp resources/textures/holy_avenger_gen.png              public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_GenTex.png
 	# cp resources/textures/holy_avenger_main.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_MainTex.png
 	# cp resources/textures/holy_avenger_norm.png             public/$(sideloaderpath)/Items/HolyAvenger/Textures/holyavenger_Material/_NormTex.png
@@ -107,3 +109,10 @@ clean:
 	rm -f -r bin
 info:
 	echo Modname: $(modname)
+
+unity:
+	cp resources/artsource/holyavenger_Model.fbx resources/unity/HolyAvengerBastard/Assets/holyavenger_Model.fbx
+	cp resources/artsource/exports/holyavenger/holyavenger_Model_holyavenger_Material_AlbedoTransparency.png    resources/unity/HolyAvengerBastard/Assets/AlbedoTransparency.png
+	cp resources/artsource/exports/holyavenger/holyavenger_Model_holyavenger_Material_MetallicSmoothness.png    resources/unity/HolyAvengerBastard/Assets/MetallicSmoothness.png
+	cp resources/artsource/exports/holyavenger/holyavenger_Model_holyavenger_Material_Normal.png                resources/unity/HolyAvengerBastard/Assets/Normal.png
+
