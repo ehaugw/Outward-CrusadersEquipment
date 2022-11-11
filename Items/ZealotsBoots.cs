@@ -21,7 +21,7 @@ namespace CrusadersEquipment
                 StatsHolder = new SL_EquipmentStats()
                 {
                     BaseValue = 700,
-                    RawWeight = 10.0f,
+                    RawWeight = 6.0f,
                     MaxDurability = 500,
 
                     //Physical = 0,
