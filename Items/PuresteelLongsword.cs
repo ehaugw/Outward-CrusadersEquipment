@@ -57,7 +57,13 @@ namespace CrusadersEquipment
                 SLPackName = CrusadersEquipment.sideloaderFolder,
                 SubfolderName = SubfolderName,
 
-                ItemVisuals = new SL_ItemVisual() { Prefab_Name = "puresteel_longsword_Prefab", Prefab_AssetBundle = "puresteel_longsword", Prefab_SLPack = CrusadersEquipment.sideloaderFolder, PositionOffset = new UnityEngine.Vector3(-0.03f, 0,0)},
+                ItemVisuals = new SL_ItemVisual()
+                {
+                    Prefab_Name = "puresteel_longsword_Prefab",
+                    Prefab_AssetBundle = "puresteel_longsword",
+                    Prefab_SLPack = CrusadersEquipment.sideloaderFolder,
+                    PositionOffset = new UnityEngine.Vector3(-0.03f, 0,0)
+                },
             };
 
             myitem.ApplyTemplate();

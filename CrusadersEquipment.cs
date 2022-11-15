@@ -84,7 +84,7 @@
 
             obsidianAmuletInstance = ObsidianAmulet.MakeItem();
             alphaTuanosaurTrinketInstance = AlphaTuanosaurTrinket.MakeItem();
-            talismanOfRecoveryInstance = TalismanOfRecovery.MakeItem();
+            talismanOfRecoveryInstance = GoldLichTalisman.MakeItem();
 
             puresteelLongswordRecipeInstance = PuresteelLongsword.MakeRecipes();
             adamantineIngotRecipeInstance = AdamantineIngot.MakeRecipes();
@@ -92,7 +92,7 @@
             holyWaterInstance = HolyWaterItem.MakeItem();
             holyWaterRecipeInstance = HolyWaterItem.MakeRecipe();
 
-            talismanOfRecoveryRecipeInstance = TalismanOfRecovery.MakeRecipe();
+            talismanOfRecoveryRecipeInstance = GoldLichTalisman.MakeRecipe();
             alphaTuanosaurTrinketRecipeInstance = AlphaTuanosaurTrinket.MakeRecipe();
             obsidianAmuletRecipeInstance = ObsidianAmulet.MakeRecipe();
         }

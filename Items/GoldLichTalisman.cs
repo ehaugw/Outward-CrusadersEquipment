@@ -7,21 +7,21 @@ namespace CrusadersEquipment
     using SideLoader;
     using EffectSourceConditions;
 
-    public class TalismanOfRecovery
+    public class GoldLichTalisman
     {
-        public const string SubfolderName = "TalismanOfRecovery";
+        public const string SubfolderName = "GoldLichTalisman";
         public const string ItemName = "Gold Lich Talisman";
 
         public static Item MakeItem()
         {
 
-            var myitem = new SL_Item()
+            var myitem = new SL_Equipment()
             {
                 Name = ItemName,
                 Target_ItemID = IDs.lexiconID,
-                New_ItemID = IDs.talismanOfRecoveryID,
+                New_ItemID = IDs.goldLichTalismanID,
                 EffectBehaviour = EditBehaviours.Override,
-                Description = "Crafted from a mechanism from the Light Mender's minions. Causes cure wounds to restore some burnt health.",
+                Description = "Crafted from a mechanism from the Light Mender's minions. " + Crusader.CureWoundsSpell.ItemName + " to restore some burnt health.",
                 StatsHolder = new SL_ItemStats()
                 {
                     BaseValue = 800 // gold lich equipment is also 800, but gold bars are easier to obtain than sword / shield while in hallowed marsh
@@ -32,6 +32,17 @@ namespace CrusadersEquipment
                     "Item",
                     "HandsFreeTag"
                 }),
+
+                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SubfolderName = SubfolderName,
+                ItemVisuals = new SL_ItemVisual()
+                {
+                    Prefab_Name = "basic_relic_Prefab",
+                    Prefab_AssetBundle = "basic_relic",
+                    Prefab_SLPack = CrusadersEquipment.sideloaderFolder,
+                    RotationOffset = new UnityEngine.Vector3(30, 90, 180),
+                    PositionOffset = new UnityEngine.Vector3(-0.03f, 0, 0)
+                }
             };
             myitem.ApplyTemplate();
             var item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID) as Equipment;
@@ -48,7 +59,7 @@ namespace CrusadersEquipment
 
             var requirementTransform = TinyGameObjectManager.GetOrMake(effects.transform, EffectSourceConditions.SOURCE_CONDITION_CONTAINER, true, true);
             var skillReq = requirementTransform.gameObject.AddComponent<SourceConditionEquipment>();
-            skillReq.RequiredItemID = IDs.talismanOfRecoveryID;
+            skillReq.RequiredItemID = IDs.goldLichTalismanID;
 
 
             return item as Item;
@@ -61,7 +72,7 @@ namespace CrusadersEquipment
             {
                 StationType = Recipe.CraftingType.Survival,
                 Results = new List<SL_Recipe.ItemQty>() {
-                    new SL_Recipe.ItemQty() { Quantity = 1, ItemID = IDs.talismanOfRecoveryID },
+                    new SL_Recipe.ItemQty() { Quantity = 1, ItemID = IDs.goldLichTalismanID },
                 },
                 Ingredients = new List<SL_Recipe.Ingredient>() {
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.linenClothID },
@@ -76,7 +87,7 @@ namespace CrusadersEquipment
             {
                 Name = "Crafting: " + ItemName,
                 Target_ItemID = IDs.arbitrarySurvivalRecipeID,
-                New_ItemID = IDs.talismanOfRecoveryRecipeID,
+                New_ItemID = IDs.goldLichTalismanRecipeID,
                 EffectBehaviour = EditBehaviours.Override,
                 RecipeUID = newUID
             };
