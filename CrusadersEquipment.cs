@@ -60,6 +60,7 @@
         public Item obsidianAmuletInstance;
         public Item alphaTuanosaurTrinketInstance;
         public Item talismanOfRecoveryInstance;
+        public Item woodooCharmInstance;
 
         internal void Awake()
         {
@@ -85,6 +86,7 @@
             obsidianAmuletInstance = ObsidianAmulet.MakeItem();
             alphaTuanosaurTrinketInstance = AlphaTuanosaurTrinket.MakeItem();
             talismanOfRecoveryInstance = GoldLichTalisman.MakeItem();
+            woodooCharmInstance = WoodooCharm.MakeItem();
 
             puresteelLongswordRecipeInstance = PuresteelLongsword.MakeRecipes();
             adamantineIngotRecipeInstance = AdamantineIngot.MakeRecipes();

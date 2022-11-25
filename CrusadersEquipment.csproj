@@ -112,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Items\AdamantineIngot.cs" />
+    <Compile Include="Items\WoodooCharm.cs" />
     <Compile Include="Items\AncientRelic.cs" />
     <Compile Include="Items\CrusadersPlateArmor.cs" />
     <Compile Include="Items\GoldLichTalisman.cs" />
