@@ -5,6 +5,10 @@ namespace CrusadersEquipment
     using SideLoader;
     using InstanceIDs;
     using HolyDamageManager;
+    using HarmonyLib;
+    using System;
+    using TinyHelper;
+    using System.Linq;
 
     public class HeavyPlateArmor
     {
@@ -19,6 +23,10 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.heavyPlateArmorID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "",
+                Tags = TinyTagManager.GetOrMakeTags(new string[]
+                {
+                    IDs.ArmorTag
+                }),
                 StatsHolder = new SL_EquipmentStats()
                 {
                     BaseValue = 700,
@@ -46,7 +54,7 @@ namespace CrusadersEquipment
                     Damage_Protection = 5,
                     Stamina_Use_Penalty = 4f,
                     Mana_Use_Modifier = 0,
-                    Movement_Penalty = -4f,
+                    Movement_Penalty = 4f,
                     Pouch_Bonus = 0,
                     Heat_Protection = 0,
                     Cold_Protection = -8,
@@ -58,9 +66,9 @@ namespace CrusadersEquipment
             };
             myitem.ApplyTemplate();
 
-            var plateArmor = ResourcesPrefabManager.Instance.GetItemPrefab(IDs.plateArmorID);
-            plateArmor.LegacyItemID = IDs.heavyPlateArmorID;
-            return ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
+            TinyItemManager.SetLegacyResult(IDs.plateArmorID, IDs.heavyPlateArmorID);
+            TinyItemManager.AddEnchantingOption(IDs.heavyPlateArmorID, IDs.warmasterEnchantID);
+            return ResourcesPrefabManager.Instance.GetItemPrefab(IDs.heavyPlateArmorID);
         }
     }
 }
