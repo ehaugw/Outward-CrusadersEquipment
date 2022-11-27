@@ -111,7 +111,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enchants\Doomsayer.cs" />
     <Compile Include="Items\AdamantineIngot.cs" />
+    <Compile Include="Items\HeavyPlateArmor.cs" />
     <Compile Include="Items\WoodooCharm.cs" />
     <Compile Include="Items\AncientRelic.cs" />
     <Compile Include="Items\CrusadersPlateArmor.cs" />

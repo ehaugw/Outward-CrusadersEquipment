@@ -61,22 +61,27 @@
         public Item alphaTuanosaurTrinketInstance;
         public Item talismanOfRecoveryInstance;
         public Item woodooCharmInstance;
+        public Item heavyPlateArmorInstance;
 
         internal void Awake()
         {
             Instance = this;
 
+            SL.BeforePacksLoaded += OnBeforePacksLoaded;
             SL.OnPacksLoaded += OnPackLoaded;
-
-            SL.OnPacksLoaded += OnPackLoadedEquipment;
             SL.OnSceneLoaded += OnSceneLoadedEquipment;
 
             var harmony = new Harmony(GUID);
             harmony.PatchAll();
+
+            Doomsayer.MakeEnchant();
         }
 
         public Trainer altarTrainer;
 
+        private void OnBeforePacksLoaded()
+        {
+        }
         private void OnPackLoaded()
         {
             puresteelLongswordInstance = PuresteelLongsword.MakeItem();
@@ -97,11 +102,7 @@
             talismanOfRecoveryRecipeInstance = GoldLichTalisman.MakeRecipe();
             alphaTuanosaurTrinketRecipeInstance = AlphaTuanosaurTrinket.MakeRecipe();
             obsidianAmuletRecipeInstance = ObsidianAmulet.MakeRecipe();
-        }
-
-        
-        private void OnPackLoadedEquipment()
-        {
+       
             crusadersArmorInstance = CrusadersArmor.MakeItem();
             crusadersPlateArmorInstance = CrusadersPlateArmor.MakeItem();
             crusadersHoodInstance = CrusadersHood.MakeItem();
@@ -111,6 +112,7 @@
             thickWhitePaintInstance = ThickWhitePaint.MakeItem();
             zealotsArmorInstance = ZealotsArmor.MakeItem();
             zealotsBootsInstance = ZealotsBoots.MakeItem();
+            heavyPlateArmorInstance = HeavyPlateArmor.MakeItem();
 
             crusadersArmorRecipeInstance = CrusadersArmor.MakeRecipes();
             crusadersPlateArmorRecipeInstance = CrusadersPlateArmor.MakeRecipes();
@@ -120,6 +122,7 @@
             crusadersShieldRecipeInstance = CrusadersShield.MakeRecipes();
             thickWhitePaintRecipeInstance = ThickWhitePaint.MakeRecipes();
 
+            Doomsayer.MakeEnchantEffect();
             RadiantSpark.Init();
         }
 

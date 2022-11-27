@@ -78,13 +78,6 @@ namespace CrusadersEquipment
             bonusDamage.IsModifier = true;
             bonusDamage.Value = 10;
 
-            if (ResourcesPrefabManager.Instance.GetStatusEffectPrefab(ModTheme.ImpendingDoomEffectIdentifierName) is StatusEffect impendingDoomInstance)
-            {
-                var addAndSpread = TinyGameObjectManager.GetOrMake(item.transform, "HitEffects", true, true).gameObject.AddComponent<AddThenSpreadStatus>();
-                addAndSpread.Status = impendingDoomInstance;
-                addAndSpread.Range = 3;
-                addAndSpread.BaseChancesToContract = 20;
-            }
             return item;
         }
         public static Item MakeRecipes()
