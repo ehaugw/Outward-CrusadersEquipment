@@ -5,6 +5,7 @@ namespace CrusadersEquipment
     using SideLoader;
     using InstanceIDs;
     using HolyDamageManager;
+    using TinyHelper;
 
     public class CrusadersPlateArmor
     {
@@ -90,6 +91,7 @@ namespace CrusadersEquipment
                 RecipeUID = newUID
             };
             myitem.ApplyTemplate();
+            TinyItemManager.AddEnchantingOption(myitem.New_ItemID, IDs.elattsSanctityChestID);
             return ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
         }
     }
