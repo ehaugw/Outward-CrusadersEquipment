@@ -22,7 +22,7 @@ namespace CrusadersEquipment
                 Target_ItemID = IDs.plateArmorID,
                 New_ItemID = IDs.heavyPlateArmorID,
                 EffectBehaviour = EditBehaviours.Override,
-                Description = "",
+                Description = "Heavy armor that adds weight to your weapon swings, passed down by your ancestors.",
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     IDs.ArmorTag
@@ -50,9 +50,16 @@ namespace CrusadersEquipment
                         0, 0, 0,
                         0, 0, 0
                     },
+                    Damage_Bonus = new float[]
+                    {
+                        5, 0, 0,
+                        0, 0, 0,
+                        0, 0, 0
+                    },
                     Impact_Resistance = 26,
+                    Impact_Bonus = 5,
                     Damage_Protection = 5,
-                    Stamina_Use_Penalty = 4f,
+                    Stamina_Use_Penalty = 6f,
                     Mana_Use_Modifier = 0,
                     Movement_Penalty = 4f,
                     Pouch_Bonus = 0,
