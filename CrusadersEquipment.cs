@@ -9,6 +9,7 @@
     using System.Linq;
     using NodeCanvas.Tasks.Actions;
     using NodeCanvas.Framework;
+    using InstanceIDs;
 
     [BepInPlugin(GUID, NAME, VERSION)]
     [BepInDependency(Crusader.GUID, BepInDependency.DependencyFlags.SoftDependency)]
@@ -75,6 +76,7 @@
             harmony.PatchAll();
 
             Doomsayer.MakeEnchant();
+            Lingering.MakeEnchant();
         }
 
         public Trainer altarTrainer;
@@ -188,6 +190,19 @@
                 relicReward.Item = new BBParameter<ItemReference>(relicRef);
                 relicReward.Quantity = 1;
                 __instance.ItemReward.Add(relicReward);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Weapon), "AddImbueEffect")]
+    public class Weapon_AddImbueEffect
+    {
+        [HarmonyPrefix]
+        public static void Prefix(Weapon __instance, ref float _lifespan)
+        {
+            if (__instance.ActiveEnchantmentIDs.Contains(IDs.lingeringID))
+            {
+                _lifespan += 10;
             }
         }
     }
