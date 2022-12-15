@@ -3,7 +3,8 @@ gamepath = /mnt/c/Program\ Files\ \(x86\)/Steam/steamapps/common/Outward/Outward
 pluginpath = BepInEx/plugins
 sideloaderpath = $(pluginpath)/$(modname)/SideLoader
 exports = resources/artsource/exports
-unityassets = resources/unity/HolyAvengerBastard/Assets/AssetBundles
+unityassets = resources/unity/HolyAvengerBastard/Assets
+unityassetbundles = resources/unity/HolyAvengerBastard/Assets/AssetBundles
 
 dependencies = HolyDamageManager TinyHelper CustomWeaponBehaviour EffectSourceConditions
 
@@ -56,6 +57,13 @@ assemble:
 	cp -u resources/icons/crusaders_shield.png                 public/$(sideloaderpath)/Items/CrusadersShield/Textures/icon.png
 	cp -u resources/textures/crusaders_shield_main.png         public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/_MainTex.png
 	cp -u resources/textures/crusaders_shield.xml              public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/properties.xml
+	mkdir -p public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material
+	cp -u resources/icons/basic_relic.png                      public/$(sideloaderpath)/Items/WoodooCharm/Textures/icon.png
+	cp -u $(exports)/basic_relic/_GenTex.png                   public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/_GenTex.png
+	cp -u $(exports)/basic_relic/_MainTex.png                  public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/_MainTex.png
+	cp -u $(exports)/basic_relic/_NormTex.png                  public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/_NormTex.png
+	cp -u $(exports)/basic_relic/_SpecColorTex.png             public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/_SpecColorTex.png
+	cp -u resources/textures/properties_color_spec.xml         public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/basic_relic_Material
 	cp -u resources/icons/basic_relic.png                      public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/icon.png
 	cp -u $(exports)/basic_relic/_GenTex.png                   public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/basic_relic_Material/_GenTex.png
@@ -93,11 +101,12 @@ assemble:
 	cp -u resources/textures/zealots_armor.xml                 public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/properties.xml
 	cp -u resources/textures/zealots_armor_glow.xml            public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/properties\ -\ Glow.xml
 	
-	cp -u $(unityassets)/puresteel_longsword                   public/$(sideloaderpath)/AssetBundles/puresteel_longsword
-	cp -u $(unityassets)/basic_relic                           public/$(sideloaderpath)/AssetBundles/basic_relic
+	cp -u $(unityassetbundles)/puresteel_longsword                                     public/$(sideloaderpath)/AssetBundles/puresteel_longsword
+	cp -u $(unityassetbundles)/basic_relic                                             public/$(sideloaderpath)/AssetBundles/basic_relic
 
 unity:
 	cp -u resources/artsource/puresteel_longsword.fbx                                  $(unityassets)/puresteel_longsword.fbx
+	cp -u resources/artsource/basic_relic.fbx                                          $(unityassets)/basic_relic.fbx
 	cp -u $(exports)/puresteel_longsword/puresteel_longsword_AlbedoTransparency.png    $(unityassets)/puresteel_longsword_AlbedoTransparency.png
 	cp -u $(exports)/puresteel_longsword/puresteel_longsword_MetallicSmoothness.png    $(unityassets)/puresteel_longsword_MetallicSmoothness.png
 	cp -u $(exports)/puresteel_longsword/puresteel_longsword_Normal.png                $(unityassets)/puresteel_longsword_Normal.png
