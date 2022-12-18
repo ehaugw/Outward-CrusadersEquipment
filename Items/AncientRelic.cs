@@ -8,6 +8,7 @@ namespace CrusadersEquipment
     using NodeCanvas.Tasks.Actions;
     using SideLoader;
     using System.Linq;
+    using TinyHelper;
     using UnityEngine;
 
     public class AncientRelic
@@ -25,6 +26,13 @@ namespace CrusadersEquipment
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "Legends has it that a relic like this was lost to a golden lich long time ago.",
                 SLPackName = CrusadersEquipment.sideloaderFolder,
+                Tags = TinyTagManager.GetOrMakeTags(new string[]
+                {
+                    IDs.TrinketTag,
+                    IDs.HandsFreeTag,
+                    IDs.RelicTag,
+                    IDs.ItemTag,
+                }),
                 SubfolderName = SubfolderName,
 
             };

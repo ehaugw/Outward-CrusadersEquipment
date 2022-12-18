@@ -17,15 +17,16 @@ namespace CrusadersEquipment
             var myitem = new SL_Item()
             {
                 Name = ItemName,
-                Target_ItemID = IDs.lexiconID,
+                Target_ItemID = IDs.arbitraryTrinketID,
                 New_ItemID = IDs.obsidianAmuletID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "An ornament crafted from fire-infused glass. Causes spark to apply and spread Impending Doom.",
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
-                    "Trinket",
-                    "Item",
-                    "HandsFreeTag"
+                    IDs.TrinketTag,
+                    IDs.HandsFreeTag,
+                    IDs.RelicTag,
+                    IDs.ItemTag,
                 }),
             };
             myitem.ApplyTemplate();

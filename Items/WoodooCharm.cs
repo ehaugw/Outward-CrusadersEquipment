@@ -21,7 +21,7 @@ namespace CrusadersEquipment
             var myitem = new SL_Item()
             {
                 Name = ItemName,
-                Target_ItemID = IDs.makeshiftTorchID,
+                Target_ItemID = IDs.arbitraryTrinketID,
                 New_ItemID = IDs.woodooCharmID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "Woodoo Charm for Woodooing uncharming creatures.",
@@ -31,9 +31,10 @@ namespace CrusadersEquipment
                 },
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
-                    "Trinket",
-                    "Item",
-                    "HandsFreeTag"
+                    IDs.TrinketTag,
+                    IDs.HandsFreeTag,
+                    IDs.RelicTag,
+                    IDs.ItemTag,
                 }),
 
                 SLPackName = CrusadersEquipment.sideloaderFolder,
@@ -54,10 +55,6 @@ namespace CrusadersEquipment
             var item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID) as Equipment;
             item.IKType = Equipment.IKMode.None;
 
-            var skill = ResourcesPrefabManager.Instance.GetItemPrefab(IDs.wrathfulSmiteID);
-
-            
-
             return item as Item;
         }
     }
@@ -69,7 +66,7 @@ public class Item_GetCastSheathRequired
     [HarmonyPostfix]
     public static void Postfix(Item __instance, ref int __result)
     {
-        if ((__instance.ItemID == IDs.tormentID || __instance.ItemID == IDs.ruptureID) && (__instance.OwnerCharacter?.Inventory?.Equipment?.ItemEquippedCount(IDs.woodooCharmID) ?? 0) > 0)
+        if ((__instance.ItemID == IDs.tormentID /*|| __instance.ItemID == IDs.ruptureID*/) && (__instance.OwnerCharacter?.Inventory?.Equipment?.ItemEquippedCount(IDs.woodooCharmID) ?? 0) > 0)
         {
             __result = 0;
         }

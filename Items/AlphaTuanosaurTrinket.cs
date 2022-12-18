@@ -18,15 +18,16 @@ namespace CrusadersEquipment
             var myitem = new SL_Item()
             {
                 Name = ItemName,
-                Target_ItemID = IDs.lexiconID,
+                Target_ItemID = IDs.arbitraryTrinketID,
                 New_ItemID = IDs.alphaTuanosaurTrinketID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "A trinket made from a tail bone of an apex predator. Causes the cooldown of Wrathful Smite to reset if used on a prone target.",
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
-                    "Trinket",
-                    "Item",
-                    "HandsFreeTag"
+                    IDs.TrinketTag,
+                    IDs.HandsFreeTag,
+                    IDs.RelicTag,
+                    IDs.ItemTag,
                 }),
             };
             myitem.ApplyTemplate();

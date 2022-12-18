@@ -18,7 +18,7 @@ namespace CrusadersEquipment
             var myitem = new SL_Equipment()
             {
                 Name = ItemName,
-                Target_ItemID = IDs.lexiconID,
+                Target_ItemID = IDs.arbitraryTrinketID,
                 New_ItemID = IDs.goldLichTalismanID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "Crafted from a mechanism from the Light Mender's minions. " + Crusader.CureWoundsSpell.ItemName + " to restore some burnt health.",
@@ -28,9 +28,10 @@ namespace CrusadersEquipment
                 },
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
-                    "Trinket",
-                    "Item",
-                    "HandsFreeTag"
+                    IDs.TrinketTag,
+                    IDs.HandsFreeTag,
+                    IDs.RelicTag,
+                    IDs.ItemTag,
                 }),
 
                 SLPackName = CrusadersEquipment.sideloaderFolder,
