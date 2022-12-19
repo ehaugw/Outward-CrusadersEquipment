@@ -24,6 +24,7 @@ namespace CrusadersEquipment
                 Description = "Crafted from a mechanism from the Light Mender's minions. " + Crusader.CureWoundsSpell.ItemName + " to restore some burnt health.",
                 StatsHolder = new SL_ItemStats()
                 {
+                    MaxDurability = 100,
                     BaseValue = 800 // gold lich equipment is also 800, but gold bars are easier to obtain than sword / shield while in hallowed marsh
                 },
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
