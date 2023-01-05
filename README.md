@@ -9,6 +9,7 @@ This mods was confirmed to work with the (at that time) current base game (Outwa
 
 What's the purpose of "Crusader's Equipment"?
 
+* Provide interesting gear options for people who with to play with knight-ish builds
 * Provide more gear options for players who wish to increase their [Holy Damage](https://www.nexusmods.com/outward/mods/221 "Holy Damage") bonus.
 * Ensuring that the highest possible [Holy Damage](https://www.nexusmods.com/outward/mods/221 "Holy Damage") bonus is not affected by this mod.
 * Provide more options for players who wish to look like someone doing Elatt's bidding
@@ -145,6 +146,10 @@ Manual Uninstallation
 # Patch notes
 
 
+* Version 3.0.1
+
+  * Fixed README.md.
+  * Updated file structure to work with thunderstore.
 * Version 3.0.0
 
   * Updated to work with Outward Definitive Edition
@@ -220,6 +225,7 @@ Manual Uninstallation
   * Remove alchemy loopholes that obliterates the game economy.
 * [Crusader's Equipment](https://outward.thunderstore.io/package/ehaugw/CrusadersEquipment/ "Crusader's Equipment")
 
+  * Provide interesting gear options for people who with to play with knight-ish builds
   * Provide more gear options for players who wish to increase their [Holy Damage](https://www.nexusmods.com/outward/mods/221 "Holy Damage") bonus.
   * Ensuring that the highest possible [Holy Damage](https://www.nexusmods.com/outward/mods/221 "Holy Damage") bonus is not affected by this mod.
   * Provide more options for players who wish to look like someone doing Elatt's bidding
