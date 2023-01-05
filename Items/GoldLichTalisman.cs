@@ -21,7 +21,7 @@ namespace CrusadersEquipment
                 Target_ItemID = IDs.arbitraryTrinketID,
                 New_ItemID = IDs.goldLichTalismanID,
                 EffectBehaviour = EditBehaviours.Override,
-                Description = "Crafted from a mechanism from the Light Mender's minions. " + Crusader.CureWoundsSpell.ItemName + " to restore some burnt health.",
+                Description = "Crafted from a mechanism from the Light Mender's minions.",
                 StatsHolder = new SL_ItemStats()
                 {
                     MaxDurability = 100,
@@ -50,19 +50,17 @@ namespace CrusadersEquipment
             var item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID) as Equipment;
             item.IKType = Equipment.IKMode.None;
 
-            var skill = ResourcesPrefabManager.Instance.GetItemPrefab(IDs.cureWoundsID);
+            if (ResourcesPrefabManager.Instance.GetItemPrefab(IDs.cureWoundsID) is Skill skill)
+            {
+                var effects = TinyGameObjectManager.MakeFreshObject(EffectSourceConditions.EFFECTS_CONTAINER, true, true, skill.transform);
+                var burntHealthRestore = effects.gameObject.AddComponent<AffectBurntHealth>();
+                burntHealthRestore.AffectQuantity = 1;
+                burntHealthRestore.IsModifier = false;
 
-
-            
-            var effects = TinyGameObjectManager.MakeFreshObject(EffectSourceConditions.EFFECTS_CONTAINER, true, true, skill.transform);
-            var burntHealthRestore = effects.gameObject.AddComponent<AffectBurntHealth>();
-            burntHealthRestore.AffectQuantity = 1;
-            burntHealthRestore.IsModifier = false;
-
-            var requirementTransform = TinyGameObjectManager.GetOrMake(effects.transform, EffectSourceConditions.SOURCE_CONDITION_CONTAINER, true, true);
-            var skillReq = requirementTransform.gameObject.AddComponent<SourceConditionEquipment>();
-            skillReq.RequiredItemID = IDs.goldLichTalismanID;
-
+                var requirementTransform = TinyGameObjectManager.GetOrMake(effects.transform, EffectSourceConditions.SOURCE_CONDITION_CONTAINER, true, true);
+                var skillReq = requirementTransform.gameObject.AddComponent<SourceConditionEquipment>();
+                skillReq.RequiredItemID = IDs.goldLichTalismanID;
+            }
 
             return item as Item;
         }
