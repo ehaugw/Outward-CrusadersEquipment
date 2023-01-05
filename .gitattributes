@@ -1,0 +1,2 @@
+CrusadersEquipment_thunderstore.zip filter=lfs diff=lfs merge=lfs -text
+CrusadersEquipment.rar filter=lfs diff=lfs merge=lfs -text
