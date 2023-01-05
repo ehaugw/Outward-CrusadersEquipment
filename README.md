@@ -44,22 +44,13 @@ Manual Uninstallation
 # Features
 
 "Crusader's Equipment" implements the following items to the game:
-**Crusader's Bastard Sword** Recipe scroll can be bought in Monsoon
+**Puresteel Longsword** Recipe scroll can be bought in Monsoon
 
 * Damage: 48
 * Speed: 0.9
 * Impact: 30
 * Custom Tags: [Finesse](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Finesse"), [Holy](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Holy").
-* Has a small chance to inflict and even spread [Impending Doom](https://outward.thunderstore.io/package/ehaugw/Crusader/ "Impending Doom") among your foes (Requires [The Crusader](https://outward.thunderstore.io/package/ehaugw/Crusader/ "The Crusader") to work correctly).
-* Increases the damage dealt with weapon skills by 25%.
-
-**Crusader's Longsword** Recipe scroll can be bought in Monsoon
-
-* Damage: 35
-* Speed: 1.1
-* Impact: 30
-* Custom Tags: [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard"), [Holy](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Holy").
-* Has a small chance to inflict and even spread [Impending Doom](https://outward.thunderstore.io/package/ehaugw/Crusader/ "Impending Doom") among your foes (Requires [The Crusader](https://outward.thunderstore.io/package/ehaugw/Crusader/ "The Crusader") to work correctly).
+* Increases the damage dealt with weapon skills by 10%.
 
 **Ancient Relic**
 
@@ -69,7 +60,7 @@ Manual Uninstallation
 
 * Gives a stack of [Burst of Divinity](https://outward.thunderstore.io/package/ehaugw/Crusader/ "Burst of Divinity") when drunk (Requires [The Crusader](https://outward.thunderstore.io/package/ehaugw/Crusader/ "The Crusader") to work correctly).
 
-**Adamantine Ingot** Recipe scroll can be bought in Monsoon
+**Puresteel Ingot** Recipe scroll can be bought in Monsoon
 
 * A sizable ignot made of pure adamantine.
 * Can be used to craft exquisite equipment.
@@ -146,10 +137,16 @@ Manual Uninstallation
 # Patch notes
 
 
+* Version 3.0.2
+
+  * Updated README.md to reflect v3.0.1 changes.
 * Version 3.0.1
 
   * Fixed README.md.
   * Updated file structure to work with thunderstore.
+  * Renamed Crusader's Bastard Sword to Puresteel Longsword.
+  * Renamed Adamantine Ingot to Puresteel Ingot.
+  * Removed Crusader's Longsword.
 * Version 3.0.0
 
   * Updated to work with Outward Definitive Edition

@@ -23,7 +23,7 @@
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "3.0.1";
+        public const string VERSION = "3.0.2";
         public const string NAME = "Crusaders Equipment";
 
         public const string sideloaderFolder = "CrusadersEquipment";
