@@ -3,7 +3,7 @@ using TinyHelper;
 
 namespace CrusadersEquipment
 {
-    using Crusader;
+    using ImpendingDoom;
     using InstanceIDs;
     using SideLoader;
     using System;

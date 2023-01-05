@@ -5,9 +5,6 @@ namespace CrusadersEquipment
     using SideLoader;
     using InstanceIDs;
     using TinyHelper;
-    using Crusader;
-    using System.Linq;
-    using UnityEngine;
 
     public class PuresteelLongsword
     {

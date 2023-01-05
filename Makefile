@@ -6,7 +6,7 @@ exports = resources/artsource/exports
 unityassets = resources/unity/HolyAvengerBastard/Assets
 unityassetbundles = resources/unity/HolyAvengerBastard/Assets/AssetBundles
 
-dependencies = HolyDamageManager TinyHelper CustomWeaponBehaviour EffectSourceConditions
+dependencies = HolyDamageManager TinyHelper CustomWeaponBehaviour EffectSourceConditions ImpendingDoom
 
 assemble:
 	# common for all mods
@@ -100,6 +100,8 @@ assemble:
 	cp -u resources/textures/zealots_armor_glow.png            public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/_EmissionTex.png
 	cp -u resources/textures/zealots_armor.xml                 public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/properties.xml
 	cp -u resources/textures/zealots_armor_glow.xml            public/$(sideloaderpath)/Items/ZealotsArmor/Textures/mat_cha_krypteiaarmor/properties\ -\ Glow.xml
+
+	cp -u ../ImpendingDoom/resources/textures/impendingDoomIcon.png             public/$(sideloaderpath)/Texture2D/
 	
 	cp -u $(unityassetbundles)/puresteel_longsword                                     public/$(sideloaderpath)/AssetBundles/puresteel_longsword
 	cp -u $(unityassetbundles)/basic_relic                                             public/$(sideloaderpath)/AssetBundles/basic_relic
@@ -112,21 +114,36 @@ unity:
 	cp -u $(exports)/puresteel_longsword/puresteel_longsword_Normal.png                $(unityassets)/puresteel_longsword_Normal.png
 	
 publish:
+	make clean
 	make assemble
-	rm -f $(modname).rar
 	rar a $(modname).rar -ep1 public/*
+	
+	cp -r public/BepInEx thunderstore
+	mv thunderstore/plugins/$(modname)/* thunderstore/plugins
+	rmdir thunderstore/plugins/$(modname)
+	
+	(cd ../Descriptions && python3 $(modname).py)
+	
+	cp -u resources/manifest.json thunderstore/
+	cp -u README.md thunderstore/
+	cp -u resources/icon.png thunderstore/
+	(cd thunderstore && zip -r $(modname)_thunderstore.zip *)
+	cp -u ../tcli/thunderstore.toml thunderstore
+	(cd thunderstore && tcli publish --file $(modname)_thunderstore.zip) || true
+	mv thunderstore/$(modname)_thunderstore.zip .
 
 install:
 	make assemble
 	rm -r -f $(gamepath)/$(pluginpath)/$(modname)
 	cp -u -r public/* $(gamepath)
-
 clean:
 	rm -f -r public
+	rm -f -r thunderstore
 	rm -f $(modname).rar
-	rm -f -r bin
+	rm -f $(modname)_thunderstore.zip
+	rm -f resources/manifest.json
+	rm -f README.md
 info:
 	echo Modname: $(modname)
-
 play:
 	(make install && cd .. && make play)

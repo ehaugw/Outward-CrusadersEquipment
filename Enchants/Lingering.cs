@@ -3,7 +3,6 @@ using TinyHelper;
 
 namespace CrusadersEquipment
 {
-    using Crusader;
     using InstanceIDs;
     using SideLoader;
     using System;

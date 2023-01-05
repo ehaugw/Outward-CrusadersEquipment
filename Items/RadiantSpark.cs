@@ -6,7 +6,7 @@ using System;
 
 namespace CrusadersEquipment
 {
-    using Crusader;
+    using ImpendingDoom;
     using EffectSourceConditions;
 
     public class RadiantSpark
@@ -28,8 +28,8 @@ namespace CrusadersEquipment
             //punctualDamage.HitInventory = false;
 
             var addThenSpread = extraEffects.gameObject.AddComponent<AddThenSpreadStatus>();
-            addThenSpread.Status = Crusader.Instance.impendingDoomInstance;
-            addThenSpread.Range = Radiating.RANGE * 0.5f;
+            addThenSpread.Status = ImpendingDoomMod.Instance.impendingDoomInstance;
+            addThenSpread.Range = ImpendingDoom.RANGE * 0.5f;
 
             //var condition = extraEffects.gameObject.AddComponent<StatusEffectCondition>();
             //condition.StatusEffectPrefab = Crusader.Instance.burstOfDivinityInstance;

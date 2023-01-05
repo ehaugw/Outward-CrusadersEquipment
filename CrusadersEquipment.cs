@@ -5,22 +5,25 @@
     using SideLoader;
     using HarmonyLib;
     using BepInEx;
-    using Crusader;
     using System.Linq;
     using NodeCanvas.Tasks.Actions;
     using NodeCanvas.Framework;
     using InstanceIDs;
+    using ImpendingDoom;
+    using Crusader;
 
     [BepInPlugin(GUID, NAME, VERSION)]
-    [BepInDependency(Crusader.GUID, BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency(ImpendingDoomMod.GUID, ImpendingDoomMod.VERSION)]
+    [BepInDependency(Crusader.GUID, Crusader.VERSION)]
     [BepInDependency(HolyDamageManager.HolyDamageManager.GUID, HolyDamageManager.HolyDamageManager.VERSION)]
+
 
     public class CrusadersEquipment : BaseUnityPlugin
     {
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "3.0.0";
+        public const string VERSION = "3.0.1";
         public const string NAME = "Crusaders Equipment";
 
         public const string sideloaderFolder = "CrusadersEquipment";
