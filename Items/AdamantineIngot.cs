@@ -19,7 +19,7 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.adamantineID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "A sizable ignot made of puresteel.",
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
 
             };

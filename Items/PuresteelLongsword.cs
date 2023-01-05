@@ -51,14 +51,14 @@ namespace CrusadersEquipment
                 },
                 SwingSound = SwingSoundWeapon.Weapon_2H,
                 
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
 
                 ItemVisuals = new SL_ItemVisual()
                 {
                     Prefab_Name = "puresteel_longsword_Prefab",
                     Prefab_AssetBundle = "puresteel_longsword",
-                    Prefab_SLPack = CrusadersEquipment.sideloaderFolder,
+                    Prefab_SLPack = CrusadersEquipment.ModFolderName,
                     PositionOffset = new UnityEngine.Vector3(-0.03f, 0,0)
                 },
             };
@@ -105,10 +105,6 @@ namespace CrusadersEquipment
             };
             myitem.ApplyTemplate();
             var item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
-
-            //var prefab = SL.GetSLPack("Crusader").AssetBundles["divinesmite"].LoadAsset<GameObject>("divineinfusion_Prefab").transform;
-            //UnityEngine.Object.DontDestroyOnLoad(prefab.gameObject);
-            //prefab.parent = item.gameObject.transform;
 
             return item;
         }

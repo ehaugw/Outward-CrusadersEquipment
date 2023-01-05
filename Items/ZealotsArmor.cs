@@ -53,7 +53,7 @@ namespace CrusadersEquipment
                     Cold_Protection = -6,
                     Corruption_Protection = 10,
                 },
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
             };
             myitem.ApplyTemplate();

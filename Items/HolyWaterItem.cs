@@ -39,7 +39,7 @@ namespace CrusadersEquipment
                         }
                     }
                 },
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName
             };
             myitem.ApplyTemplate();

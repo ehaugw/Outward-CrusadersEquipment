@@ -17,7 +17,7 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.crusadersRoundShieldID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "A basic shield of wood and iron that has been painted white.",
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
             };
             myitem.ApplyTemplate();

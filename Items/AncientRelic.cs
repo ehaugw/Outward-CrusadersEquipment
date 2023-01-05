@@ -25,7 +25,7 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.ancientRelicID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "Legends has it that a relic like this was lost to a golden lich long time ago.",
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     IDs.TrinketTag,

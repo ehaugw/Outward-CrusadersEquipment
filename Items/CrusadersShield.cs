@@ -17,7 +17,7 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.crusadersShieldID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "This was originally a Blood-red shield used by the leaders of northern tribes, but it was later painted to indicate affiliation to Elatt.",
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
             };
             myitem.ApplyTemplate();

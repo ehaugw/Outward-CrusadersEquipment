@@ -35,13 +35,13 @@ namespace CrusadersEquipment
                     IDs.ItemTag,
                 }),
 
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
                 ItemVisuals = new SL_ItemVisual()
                 {
                     Prefab_Name = "basic_relic_Prefab",
                     Prefab_AssetBundle = "basic_relic",
-                    Prefab_SLPack = CrusadersEquipment.sideloaderFolder,
+                    Prefab_SLPack = CrusadersEquipment.ModFolderName,
                     RotationOffset = new UnityEngine.Vector3(30, 90, 180),
                     PositionOffset = new UnityEngine.Vector3(-0.03f, 0, 0)
                 }

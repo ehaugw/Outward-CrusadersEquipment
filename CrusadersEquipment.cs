@@ -11,6 +11,7 @@
     using InstanceIDs;
     using ImpendingDoom;
     using Crusader;
+    using System.IO;
 
     [BepInPlugin(GUID, NAME, VERSION)]
     [BepInDependency(ImpendingDoomMod.GUID, ImpendingDoomMod.VERSION)]
@@ -23,10 +24,10 @@
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "3.0.2";
+        public const string VERSION = "3.0.3";
         public const string NAME = "Crusaders Equipment";
 
-        public const string sideloaderFolder = "CrusadersEquipment";
+        public static string ModFolderName = Directory.GetParent(typeof(CrusadersEquipment).Assembly.Location).Name.ToString();
 
         public Item holyWaterInstance;
         public Item holyWaterRecipeInstance;

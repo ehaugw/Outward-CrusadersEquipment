@@ -18,7 +18,7 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.thickWhitePaintID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "Thick white paint that can easily be applied to objects.",
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
                 
             };

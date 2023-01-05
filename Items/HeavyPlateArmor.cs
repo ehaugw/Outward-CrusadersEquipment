@@ -68,7 +68,7 @@ namespace CrusadersEquipment
                     Corruption_Protection = 0,
                 },
                 
-                SLPackName = CrusadersEquipment.sideloaderFolder,
+                SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
             };
             myitem.ApplyTemplate();
