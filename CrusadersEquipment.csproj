@@ -38,10 +38,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Crusader\Crusader.csproj">
-      <Project>{53117288-d043-423f-8b80-3aa5752c7491}</Project>
-      <Name>Crusader</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EffectSourceConditions\EffectSourceConditions.csproj">
       <Project>{451d5546-0a6e-4183-92d2-4720ed3c2795}</Project>
       <Name>EffectSourceConditions</Name>

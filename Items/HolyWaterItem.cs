@@ -45,7 +45,7 @@ namespace CrusadersEquipment
             myitem.ApplyTemplate();
             Item item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
 
-            if (ResourcesPrefabManager.Instance.GetStatusEffectPrefab(Crusader.ModTheme.BurstOfDivinityEffectIdentifierName) is StatusEffect burstOfDivinityInstance)
+            if (ResourcesPrefabManager.Instance.GetStatusEffectPrefab(IDs.burstOfDivinityNameID) is StatusEffect burstOfDivinityInstance)
             {
                 var addStatus = TinyGameObjectManager.GetOrMake(item.transform, "Effects", true, true).gameObject.AddComponent<AddStatusEffect>();
                 addStatus.Status = burstOfDivinityInstance;

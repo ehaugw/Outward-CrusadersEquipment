@@ -10,12 +10,13 @@
     using NodeCanvas.Framework;
     using InstanceIDs;
     using ImpendingDoom;
-    using Crusader;
     using System.IO;
+    using TinyHelper;
 
     [BepInPlugin(GUID, NAME, VERSION)]
+    [BepInDependency(SL.GUID, BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency(TinyHelper.GUID, TinyHelper.VERSION)]
     [BepInDependency(ImpendingDoomMod.GUID, ImpendingDoomMod.VERSION)]
-    [BepInDependency(Crusader.GUID, Crusader.VERSION)]
     [BepInDependency(HolyDamageManager.HolyDamageManager.GUID, HolyDamageManager.HolyDamageManager.VERSION)]
 
 
@@ -24,7 +25,7 @@
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "3.0.3";
+        public const string VERSION = "3.0.4";
         public const string NAME = "Crusaders Equipment";
 
         public static string ModFolderName = Directory.GetParent(typeof(CrusadersEquipment).Assembly.Location).Name.ToString();
@@ -138,7 +139,7 @@
             {
                 if (obj.GetComponentsInChildren<GuaranteedDrop>()?.FirstOrDefault(table => table.ItemGenatorName == "Recipes") is GuaranteedDrop recipeTableBlacksmith)
                 {
-                    if (At.GetField<GuaranteedDrop>(recipeTableBlacksmith, "m_itemDrops") is List<BasicItemDrop> drops)
+                    if (SideLoader.At.GetField<GuaranteedDrop>(recipeTableBlacksmith, "m_itemDrops") is List<BasicItemDrop> drops)
                     {
                         foreach (Item item in new Item[] { puresteelLongswordRecipeInstance, adamantineIngotRecipeInstance, crusadersArmorRecipeInstance, crusadersPlateArmorRecipeInstance, crusadersShieldRecipeInstance, crusadersRoundShieldRecipeInstance, crusadersHoodRecipeInstance, crusadersBootsRecipeInstance })
                         {
@@ -151,7 +152,7 @@
 
             if (GameObject.Find("UNPC_LaineAberforthA")?.GetComponentsInChildren<GuaranteedDrop>()?.FirstOrDefault(table => table.ItemGenatorName == "Recipes") is GuaranteedDrop recipeTableLaine)
             {
-                if (At.GetField<GuaranteedDrop>(recipeTableLaine, "m_itemDrops") is List<BasicItemDrop> drops)
+                if (SideLoader.At.GetField<GuaranteedDrop>(recipeTableLaine, "m_itemDrops") is List<BasicItemDrop> drops)
                 {
                     foreach (Item item in new Item[] { holyWaterRecipeInstance, thickWhitePaintRecipeInstance })
                     {
@@ -165,7 +166,7 @@
             {
                 if (transform?.GetComponentsInChildren<GuaranteedDrop>()?.FirstOrDefault(table => table.ItemGenatorName == "Recipes") is GuaranteedDrop recipeTableMathias)
                 {
-                    if (At.GetField<GuaranteedDrop>(recipeTableMathias, "m_itemDrops") is List<BasicItemDrop> drops)
+                    if (SideLoader.At.GetField<GuaranteedDrop>(recipeTableMathias, "m_itemDrops") is List<BasicItemDrop> drops)
                     {
                         foreach (Item item in new Item[] { zealotsArmorInstance, zealotsBootsInstance, crusadersArmorInstance, crusadersBootsInstance, crusadersHoodInstance, talismanOfRecoveryInstance, alphaTuanosaurTrinketInstance, obsidianAmuletInstance })
                         {
