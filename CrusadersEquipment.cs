@@ -25,7 +25,7 @@
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "3.0.4";
+        public const string VERSION = "3.0.5";
         public const string NAME = "Crusaders Equipment";
 
         public static string ModFolderName = Directory.GetParent(typeof(CrusadersEquipment).Assembly.Location).Name.ToString();
@@ -33,6 +33,7 @@
         public Item holyWaterInstance;
         public Item holyWaterRecipeInstance;
 
+        public Item corruptedLongswordInstance;
         public Item puresteelLongswordInstance;
         public Item lightMendersRelicInstance;
         public Item adamantineIngotInstance;
@@ -91,6 +92,8 @@
         }
         private void OnPackLoaded()
         {
+            corruptedLongswordInstance = CorruptedLongsword.MakeItem();
+
             puresteelLongswordInstance = PuresteelLongsword.MakeItem();
             lightMendersRelicInstance = AncientRelic.MakeItem();
             adamantineIngotInstance = AdamantineIngot.MakeItem();
