@@ -79,7 +79,7 @@ assemble:
 	cp -u $(exports)/heavy_plate_armor/_SpecColorTex.png       public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/_SpecColorTex.png
 	cp -u resources/textures/properties_color_spec.xml         public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/corruptedLongsword/Textures/ #corrupted_longsword_Material
-	cp -u resources/icons/holy_avenger_no_inscription.png      public/$(sideloaderpath)/Items/corruptedLongsword/Textures/icon.png
+	cp -u resources/icons/corrupted_longsword.png              public/$(sideloaderpath)/Items/corruptedLongsword/Textures/icon.png
 	# cp -u $(exports)/corrupted_longsword/_GenTex.png           public/$(sideloaderpath)/Items/corruptedLongsword/Textures/corrupted_longsword_Material/_GenTex.png
 	# cp -u $(exports)/corrupted_longsword/_MainTex.png          public/$(sideloaderpath)/Items/corruptedLongsword/Textures/corrupted_longsword_Material/_MainTex.png
 	# cp -u $(exports)/corrupted_longsword/_NormTex.png          public/$(sideloaderpath)/Items/corruptedLongsword/Textures/corrupted_longsword_Material/_NormTex.png
@@ -129,6 +129,7 @@ unity:
 	cp $(exports)/puresteel_longsword/puresteel_longsword_Normal.png                $(unityassets)/puresteel_longsword_Normal.png
 	
 publish:
+	make backup
 	make clean
 	make assemble
 	rar a $(modname).rar -ep1 public/*
@@ -166,3 +167,9 @@ edit:
 	nvim ../Descriptions/$(modname).py
 readme:
 	(cd ../Descriptions/ && python3 $(modname).py)
+backup:
+	mkdir -p ../../OutwardModdingGraphicsBackup/resources/artsource
+	mkdir -p ../../OutwardModdingGraphicsBackup/resources/icons
+	cp -u resources/artsource/*.blend ../../OutwardModdingGraphicsBackup/resources/artsource
+	cp -u resources/artsource/*.spp ../../OutwardModdingGraphicsBackup/resources/artsource
+	cp -u resources/icons/*.pdn ../../OutwardModdingGraphicsBackup/resources/icons
