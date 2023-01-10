@@ -21,6 +21,14 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.obsidianAmuletID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "An ornament crafted from fire-infused glass. Causes spark to apply and spread Impending Doom.",
+                StatsHolder = new SL_ItemStats()
+                {
+                    MaxDurability = 100,
+                    BaseValue = 200
+                },
+                BehaviorOnNoDurability = Item.BehaviorOnNoDurabilityType.Destroy,
+                RepairedInRest = false,
+
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     IDs.TrinketTag,
