@@ -22,6 +22,14 @@ namespace CrusadersEquipment
                 New_ItemID = IDs.alphaTuanosaurTrinketID,
                 EffectBehaviour = EditBehaviours.Override,
                 Description = "A trinket made from a tail bone of an apex predator. Causes the cooldown of Wrathful Smite to reset if used on a prone target.",
+                StatsHolder = new SL_ItemStats()
+                {
+                    MaxDurability = 100,
+                    BaseValue = 300
+                },
+                BehaviorOnNoDurability = Item.BehaviorOnNoDurabilityType.Destroy,
+                RepairedInRest = false,
+
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     IDs.TrinketTag,
