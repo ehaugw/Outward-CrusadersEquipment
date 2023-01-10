@@ -118,6 +118,9 @@ unity:
 	cp resources/artsource/puresteel_longsword.fbx                                  $(unityassets)/puresteel_longsword.fbx
 	cp resources/artsource/corrupted_longsword.fbx                                  $(unityassets)/corrupted_longsword.fbx
 	cp resources/artsource/basic_relic.fbx                                          $(unityassets)/basic_relic.fbx
+	cp $(exports)/basic_relic/basic_relic_AlbedoTransparency.png    				$(unityassets)/basic_relic_AlbedoTransparency.png
+	cp $(exports)/basic_relic/basic_relic_MetallicSmoothness.png    				$(unityassets)/basic_relic_MetallicSmoothness.png
+	cp $(exports)/basic_relic/basic_relic_Normal.png                				$(unityassets)/basic_relic_Normal.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_AlbedoTransparency.png    $(unityassets)/corrupted_longsword_AlbedoTransparency.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_MetallicSmoothness.png    $(unityassets)/corrupted_longsword_MetallicSmoothness.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_Normal.png                $(unityassets)/corrupted_longsword_Normal.png
