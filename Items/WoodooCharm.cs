@@ -29,6 +29,9 @@ namespace CrusadersEquipment
                 {
                     MaxDurability = 100,
                 },
+                BehaviorOnNoDurability = Item.BehaviorOnNoDurabilityType.Destroy,
+                RepairedInRest = false,
+
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     IDs.TrinketTag,
