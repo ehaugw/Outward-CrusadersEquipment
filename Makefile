@@ -57,20 +57,6 @@ assemble:
 	cp -u resources/icons/crusaders_shield.png                 public/$(sideloaderpath)/Items/CrusadersShield/Textures/icon.png
 	cp -u resources/textures/crusaders_shield_main.png         public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/_MainTex.png
 	cp -u resources/textures/crusaders_shield.xml              public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/properties.xml
-	mkdir -p public/$(sideloaderpath)/Items/WoodooCharm/Textures/ #basic_relic_Material
-	cp -u resources/icons/basic_relic.png                      public/$(sideloaderpath)/Items/WoodooCharm/Textures/icon.png
-	# cp -u $(exports)/basic_relic/_GenTex.png                   public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/_GenTex.png
-	# cp -u $(exports)/basic_relic/_MainTex.png                  public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/_MainTex.png
-	# cp -u $(exports)/basic_relic/_NormTex.png                  public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/_NormTex.png
-	# cp -u $(exports)/basic_relic/_SpecColorTex.png             public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/_SpecColorTex.png
-	# cp -u resources/textures/properties_color_spec.xml         public/$(sideloaderpath)/Items/WoodooCharm/Textures/basic_relic_Material/properties.xml
-	mkdir -p public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/ #basic_relic_Material
-	cp -u resources/icons/basic_relic.png                      public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/icon.png
-	# cp -u $(exports)/basic_relic/_GenTex.png                   public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/basic_relic_Material/_GenTex.png
-	# cp -u $(exports)/basic_relic/_MainTex.png                  public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/basic_relic_Material/_MainTex.png
-	# cp -u $(exports)/basic_relic/_NormTex.png                  public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/basic_relic_Material/_NormTex.png
-	# cp -u $(exports)/basic_relic/_SpecColorTex.png             public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/basic_relic_Material/_SpecColorTex.png
-	# cp -u resources/textures/properties_color_spec.xml         public/$(sideloaderpath)/Items/GoldLichTalisman/Textures/basic_relic_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain
 	# cp -u resources/icons/holy_avenger_no_inscription.png      public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/icon.png
 	cp -u $(exports)/heavy_plate_armor/_GenTex.png             public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/_GenTex.png
@@ -112,15 +98,10 @@ assemble:
 	
 	cp -u $(unityassetbundles)/corrupted_longsword                                     public/$(sideloaderpath)/AssetBundles/corrupted_longsword
 	cp -u $(unityassetbundles)/puresteel_longsword                                     public/$(sideloaderpath)/AssetBundles/puresteel_longsword
-	cp -u $(unityassetbundles)/basic_relic                                             public/$(sideloaderpath)/AssetBundles/basic_relic
 
 unity:
 	cp resources/artsource/puresteel_longsword.fbx                                  $(unityassets)/puresteel_longsword.fbx
 	cp resources/artsource/corrupted_longsword.fbx                                  $(unityassets)/corrupted_longsword.fbx
-	cp resources/artsource/basic_relic.fbx                                          $(unityassets)/basic_relic.fbx
-	cp $(exports)/basic_relic/basic_relic_AlbedoTransparency.png    				$(unityassets)/basic_relic_AlbedoTransparency.png
-	cp $(exports)/basic_relic/basic_relic_MetallicSmoothness.png    				$(unityassets)/basic_relic_MetallicSmoothness.png
-	cp $(exports)/basic_relic/basic_relic_Normal.png                				$(unityassets)/basic_relic_Normal.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_AlbedoTransparency.png    $(unityassets)/corrupted_longsword_AlbedoTransparency.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_MetallicSmoothness.png    $(unityassets)/corrupted_longsword_MetallicSmoothness.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_Normal.png                $(unityassets)/corrupted_longsword_Normal.png

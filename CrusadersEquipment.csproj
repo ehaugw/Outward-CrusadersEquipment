@@ -115,10 +115,8 @@
     <Compile Include="Items\AdamantineIngot.cs" />
     <Compile Include="Items\HeavyPlateArmor.cs" />
     <Compile Include="Items\CorruptedLongsword.cs" />
-    <Compile Include="Items\WoodooCharm.cs" />
     <Compile Include="Items\AncientRelic.cs" />
     <Compile Include="Items\CrusadersPlateArmor.cs" />
-    <Compile Include="Items\GoldLichTalisman.cs" />
     <Compile Include="Items\CrusadersArmor.cs" />
     <Compile Include="Items\CrusadersBoots.cs" />
     <Compile Include="Items\CrusadersHood.cs" />
@@ -127,9 +125,7 @@
     <Compile Include="Items\PuresteelLongsword.cs" />
     <Compile Include="Items\HolyWaterItem.cs" />
     <Compile Include="CrusadersEquipment.cs" />
-    <Compile Include="Items\AlphaTuanosaurTrinket.cs" />
     <Compile Include="Items\RadiantSpark.cs" />
-    <Compile Include="Items\ObsidianAmulet.cs" />
     <Compile Include="Items\ThickWhitePaint.cs" />
     <Compile Include="Items\ZealotsArmor.cs" />
     <Compile Include="Items\ZealotsBoots.cs" />

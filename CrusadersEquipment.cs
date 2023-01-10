@@ -42,10 +42,6 @@
         public Item puresteelLongswordRecipeInstance;
         public Item adamantineIngotRecipeInstance;
 
-        public Item talismanOfRecoveryRecipeInstance;
-        public Item obsidianAmuletRecipeInstance;
-        public Item alphaTuanosaurTrinketRecipeInstance;
-
         public Item crusadersArmorInstance;
         public Item crusadersPlateArmorInstance;
         public Item crusadersRoundShieldInstance;
@@ -63,11 +59,6 @@
         public Item crusadersBootsRecipeInstance;
         public Item zealotsArmorInstance;
         public Item zealotsBootsInstance;
-
-        public Item obsidianAmuletInstance;
-        public Item alphaTuanosaurTrinketInstance;
-        public Item talismanOfRecoveryInstance;
-        public Item woodooCharmInstance;
         public Item heavyPlateArmorInstance;
 
         internal void Awake()
@@ -98,21 +89,14 @@
             lightMendersRelicInstance = AncientRelic.MakeItem();
             adamantineIngotInstance = AdamantineIngot.MakeItem();
 
-            obsidianAmuletInstance = ObsidianAmulet.MakeItem();
-            alphaTuanosaurTrinketInstance = AlphaTuanosaurTrinket.MakeItem();
-            talismanOfRecoveryInstance = GoldLichTalisman.MakeItem();
-            woodooCharmInstance = WoodooCharm.MakeItem();
-
+            
             puresteelLongswordRecipeInstance = PuresteelLongsword.MakeRecipes();
             adamantineIngotRecipeInstance = AdamantineIngot.MakeRecipes();
 
             holyWaterInstance = HolyWaterItem.MakeItem();
             holyWaterRecipeInstance = HolyWaterItem.MakeRecipe();
 
-            talismanOfRecoveryRecipeInstance = GoldLichTalisman.MakeRecipe();
-            alphaTuanosaurTrinketRecipeInstance = AlphaTuanosaurTrinket.MakeRecipe();
-            obsidianAmuletRecipeInstance = ObsidianAmulet.MakeRecipe();
-       
+            
             crusadersArmorInstance = CrusadersArmor.MakeItem();
             crusadersPlateArmorInstance = CrusadersPlateArmor.MakeItem();
             crusadersHoodInstance = CrusadersHood.MakeItem();
@@ -171,7 +155,7 @@
                 {
                     if (SideLoader.At.GetField<GuaranteedDrop>(recipeTableMathias, "m_itemDrops") is List<BasicItemDrop> drops)
                     {
-                        foreach (Item item in new Item[] { zealotsArmorInstance, zealotsBootsInstance, crusadersArmorInstance, crusadersBootsInstance, crusadersHoodInstance, talismanOfRecoveryInstance, alphaTuanosaurTrinketInstance, obsidianAmuletInstance })
+                        foreach (Item item in new Item[] { zealotsArmorInstance, zealotsBootsInstance, crusadersArmorInstance, crusadersBootsInstance, crusadersHoodInstance })
                         {
                             //Used to say DroppedItem = item
                             drops.Add(new BasicItemDrop() { ItemRef = item, MaxDropCount = 1, MinDropCount = 1 });
