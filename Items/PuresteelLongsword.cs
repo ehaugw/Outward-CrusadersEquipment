@@ -21,7 +21,7 @@ namespace CrusadersEquipment
                 Name = ItemName,
                 Target_ItemID = IDs.ironSwordID,
                 New_ItemID = IDs.puresteelLongswordID,
-                Description = "Has a small chance to inflict and spread Impending Doom among your foes.",
+                Description = "",
 
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
