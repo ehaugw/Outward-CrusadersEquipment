@@ -27,6 +27,9 @@ namespace CrusadersEquipment
                     MaxDurability = 100,
                     BaseValue = 800 // gold lich equipment is also 800, but gold bars are easier to obtain than sword / shield while in hallowed marsh
                 },
+                BehaviorOnNoDurability = Item.BehaviorOnNoDurabilityType.Destroy,
+                RepairedInRest = false,
+
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
                     IDs.TrinketTag,
