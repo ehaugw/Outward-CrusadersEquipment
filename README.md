@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at January 06, 2023. Due to significant changes in a few mod frameworks' infrastructures, it is recommended that you update all mods that are older than November 08, 2022.
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at January 11, 2023. Due to significant changes in a few mod frameworks' infrastructures, it is recommended that you update all mods that are older than November 08, 2022.
 
 
 
@@ -138,6 +138,11 @@ Manual Uninstallation
 # Patch notes
 
 
+* Version 3.0.5
+
+  * Removed all relics as they were accidentally published by a mistake and are still work in progress.
+  * Added **Corrupted Longsword**.
+  * Remove note about applying and spreading [Impending Doom](https://outward.thunderstore.io/package/ehaugw/Crusader/ "Impending Doom") on **Puresteel Longsword** description.
 * Version 3.0.4
 
   * Properly remove **Crusader** dependency.
