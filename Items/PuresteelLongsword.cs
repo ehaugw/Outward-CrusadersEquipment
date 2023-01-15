@@ -30,7 +30,8 @@ namespace CrusadersEquipment
                     IDs.BladeTag,
                     IDs.WeaponTag,
                     IDs.ItemTag,
-                    IDs.MaulShoveTag
+                    IDs.MaulShoveTag,
+                    IDs.LingeringEligibleTag,
                 }),
                 StatsHolder = new SL_WeaponStats()
                 {

@@ -40,7 +40,7 @@ namespace CrusadersEquipment
                         new SL_EnchantmentRecipe.IngredientData()
                         {
                             SelectorType = SL_EnchantmentRecipe.IngredientTypes.Tag,
-                            SelectorValue = TinyTagManager.GetOrMakeTag(IDs.HolyTag).TagName,
+                            SelectorValue = TinyTagManager.GetOrMakeTag(IDs.LingeringEligibleTag).TagName,
                         }
                     }
                 },
