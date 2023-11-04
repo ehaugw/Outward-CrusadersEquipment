@@ -42,6 +42,7 @@ namespace CrusadersEquipment
                     BaseDamage = new List<SL_Damage>() { new SL_Damage() { Damage = weaponData[3], Type = DamageType.Types.Physical } },
                     Impact = weaponData[1],
                     AutoGenerateAttackData = true,
+                    StamCost = weaponData[0],
                 },
                 EffectTransforms = new SL_EffectTransform[] {
                     new SL_EffectTransform() {

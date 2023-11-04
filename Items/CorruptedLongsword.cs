@@ -40,6 +40,7 @@ namespace CrusadersEquipment
                     BaseDamage = new List<SL_Damage>() { new SL_Damage() { Damage = weaponData[3], Type = DamageType.Types.Physical } },
                     Impact = weaponData[1],
                     AutoGenerateAttackData = true,
+                    StamCost= weaponData[0],
                 },
                 HealthLeechRatio = 0.02f,
                 HealthBurnLeechRatio = 0.01f,
