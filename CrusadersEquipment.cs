@@ -39,6 +39,7 @@
         public Item adamantineIngotInstance;
 
         public Item blessedLongswordRecipeInstance;
+        public Item corruptedLongswordRecipeInstance;
         public Item puresteelLongswordRecipeInstance;
         public Item adamantineIngotRecipeInstance;
 
@@ -89,7 +90,7 @@
             lightMendersRelicInstance = AncientRelic.MakeItem();
             adamantineIngotInstance = AdamantineIngot.MakeItem();
 
-            
+            corruptedLongswordRecipeInstance = CorruptedLongsword.MakeRecipes();
             puresteelLongswordRecipeInstance = PuresteelLongsword.MakeRecipes();
             adamantineIngotRecipeInstance = AdamantineIngot.MakeRecipes();
 

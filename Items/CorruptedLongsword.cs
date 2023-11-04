@@ -76,7 +76,6 @@ namespace CrusadersEquipment
             //bonusDamage.Tags = tagSelectorList;
             //bonusDamage.IsModifier = true;
             //bonusDamage.Value = 10;
-
             return item;
         }
         public static Item MakeRecipes()
@@ -86,11 +85,11 @@ namespace CrusadersEquipment
             {
                 StationType = Recipe.CraftingType.Survival,
                 Results = new List<SL_Recipe.ItemQty>() {
-                    new SL_Recipe.ItemQty() { Quantity = 1, ItemID = IDs.puresteelLongswordID },
+                    new SL_Recipe.ItemQty() { Quantity = 1, ItemID = IDs.corruptedLongswordID },
                 },
                 Ingredients = new List<SL_Recipe.Ingredient>() {
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.ancientRelicID },
-                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.goldIngotID },
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.darkStoneID },
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.adamantineID },
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.adamantineID}
                 },
@@ -101,7 +100,7 @@ namespace CrusadersEquipment
             {
                 Name = "Crafting: " + ItemName,
                 Target_ItemID = IDs.arbitrarySurvivalRecipeID,
-                New_ItemID = IDs.puresteelLongswordRecipeID,
+                New_ItemID = IDs.corruptedLongswordRecipeID,
                 EffectBehaviour = EditBehaviours.Override,
                 RecipeUID = newUID
             };
