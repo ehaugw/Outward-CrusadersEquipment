@@ -116,9 +116,26 @@
             crusadersRoundShieldRecipeInstance = CrusadersRoundShield.MakeRecipes();
             crusadersShieldRecipeInstance = CrusadersShield.MakeRecipes();
             thickWhitePaintRecipeInstance = ThickWhitePaint.MakeRecipes();
+            MakeGoldToSilverRecipe();
 
             Doomsayer.MakeEnchantEffect();
             RadiantSpark.Init();
+        }
+
+        private void MakeGoldToSilverRecipe()
+        {
+            string newUID = CrusadersEquipment.GUID + ".goldingottosilverrecipe";
+            new SL_Recipe()
+            {
+                StationType = Recipe.CraftingType.Survival,
+                Results = new List<SL_Recipe.ItemQty>() {
+                new SL_Recipe.ItemQty() {Quantity = 100, ItemID = IDs.silverCoinID},
+            },
+                Ingredients = new List<SL_Recipe.Ingredient>() {
+                new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.goldIngotID},
+            },
+                UID = newUID,
+            }.ApplyTemplate();
         }
 
         private void OnSceneLoadedEquipment()
