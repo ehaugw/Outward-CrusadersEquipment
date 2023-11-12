@@ -15,7 +15,7 @@ namespace CrusadersEquipment
         
         public static Item MakeItem()
         {
-            float[] weaponData = new[] { 4.8f, 30f, 0.9f, 48f };
+            float[] weaponData = new[] { 5.2f, 30f, 0.9f, 48f };
             var myitem = new SL_Weapon()
             {
                 Name = ItemName,
@@ -70,8 +70,8 @@ namespace CrusadersEquipment
 
             var bonusDamage = TinyGameObjectManager.GetOrMake(item.transform, "Effects", true, true).gameObject.AddComponent<AffectStat>();
 
-            var tagSelectorList = new TagSourceSelector[] {new TagSourceSelector(TagSourceManager.Instance.GetTag("359"))};
-            bonusDamage.AffectedStat = new TagSourceSelector(TagSourceManager.Instance.GetTag("96"));
+            var tagSelectorList = new TagSourceSelector[] {new TagSourceSelector(TagSourceManager.Instance.GetTag(IDs.weaponSkilllDamageModifier))};
+            bonusDamage.AffectedStat = new TagSourceSelector(TagSourceManager.Instance.GetTag(IDs.allDamagesTag));
 
             bonusDamage.Tags = tagSelectorList;
             bonusDamage.IsModifier = true;
