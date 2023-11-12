@@ -15,7 +15,7 @@ namespace CrusadersEquipment
         
         public static Item MakeItem()
         {
-            float[] weaponData = new[] { 6f, 34f, 0.8f, 57f };
+            float[] weaponData = new[] { 6f, 35f, 0.8f, 57f };
             var myitem = new SL_Weapon()
             {
                 Name = ItemName,
@@ -43,7 +43,7 @@ namespace CrusadersEquipment
                     StamCost= weaponData[0],
                 },
                 HealthLeechRatio = 0.02f,
-                HealthBurnLeechRatio = 0.01f,
+                HealthBurnLeechRatio = 0.02f,
                 EffectTransforms = new SL_EffectTransform[] {
                     new SL_EffectTransform() {
                         TransformName = "HitEffects",
@@ -68,14 +68,14 @@ namespace CrusadersEquipment
             myitem.ApplyTemplate();
             Item item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
 
-            //var bonusDamage = TinyGameObjectManager.GetOrMake(item.transform, "Effects", true, true).gameObject.AddComponent<AffectStat>();
+            var bonusDamage = TinyGameObjectManager.GetOrMake(item.transform, "Effects", true, true).gameObject.AddComponent<AffectStat>();
 
-            //var tagSelectorList = new TagSourceSelector[] {new TagSourceSelector(TagSourceManager.Instance.GetTag("359"))};
-            //bonusDamage.AffectedStat = new TagSourceSelector(TagSourceManager.Instance.GetTag("96"));
+            var tagSelectorList = new TagSourceSelector[] { new TagSourceSelector(TagSourceManager.Instance.GetTag(IDs.weaponSkilllDamageModifier)) };
+            bonusDamage.AffectedStat = new TagSourceSelector(TagSourceManager.Instance.GetTag(IDs.allDamagesTag));
 
-            //bonusDamage.Tags = tagSelectorList;
-            //bonusDamage.IsModifier = true;
-            //bonusDamage.Value = 10;
+            bonusDamage.Tags = tagSelectorList;
+            bonusDamage.IsModifier = true;
+            bonusDamage.Value = 10;
             return item;
         }
         public static Item MakeRecipes()
