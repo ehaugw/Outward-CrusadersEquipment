@@ -117,6 +117,8 @@
             crusadersShieldRecipeInstance = CrusadersShield.MakeRecipes();
             thickWhitePaintRecipeInstance = ThickWhitePaint.MakeRecipes();
             MakeGoldToSilverRecipe();
+            FaraamLongsword.MakeItem();
+            FaraamHelmet.MakeItem();
 
             Doomsayer.MakeEnchantEffect();
             RadiantSpark.Init();

@@ -14,8 +14,7 @@ resources/artsource/puresteel_longsword.fbx
 resources/artsource/basic_relic.blend
 resources/artsource/corrupted_longsword.blend
 resources/artsource/puresteel_longsword.blend
-resources/artsource/basic_relic_2.blend1
-resources/artsource/corrupted_longsword.blend1
+resources/artsource/*.blend1
 resources/artsource/basic_relic.spp
 resources/artsource/corrupted_longsword.spp
 resources/artsource/corrupted_longsword_autosave_0.spp
