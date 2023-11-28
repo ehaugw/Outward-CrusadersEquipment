@@ -61,10 +61,10 @@ namespace CrusadersEquipment
                     Damage_Protection = 5,
                     Stamina_Use_Penalty = 6f,
                     Mana_Use_Modifier = 0,
-                    Movement_Penalty = 4f,
+                    Movement_Penalty = 10f,
                     Pouch_Bonus = 0,
                     Heat_Protection = 0,
-                    Cold_Protection = -8,
+                    Cold_Protection = -5,
                     Corruption_Protection = 0,
                 },
                 
