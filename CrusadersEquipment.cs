@@ -119,6 +119,8 @@
             MakeGoldToSilverRecipe();
             FaraamLongsword.MakeItem();
             FaraamHelmet.MakeItem();
+            RangersHood.MakeItem();
+            RangersHood.MakeRecipes();
 
             Doomsayer.MakeEnchantEffect();
             RadiantSpark.Init();
