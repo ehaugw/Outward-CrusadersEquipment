@@ -13,7 +13,7 @@ namespace CrusadersEquipment
 
         public static Item MakeItem()
         {
-            var myitem = new SL_Equipment()
+            var myitem = new SL_Armor()
             {
                 Name = "Faraam Helmet",
                 Target_ItemID = IDs.tatteredHood1,
@@ -22,10 +22,10 @@ namespace CrusadersEquipment
                 Description = "",
                 StatsHolder = new SL_EquipmentStats()
                 {
-                    BaseValue = 250,
-                    RawWeight = 1.0f,
+                    BaseValue = 1000,
+                    RawWeight = 8.0f,
                     MaxDurability = 300,
- 
+                    
                     //Physical = 0,
                     //Ethereal = 1,
                     //Decay = 2,
@@ -39,29 +39,51 @@ namespace CrusadersEquipment
                     
                     Damage_Resistance = new float[]
                     {
-                        10,  0,  10,
-                        0,  0,  0,
+                        15,  0,  0,
+                        0,   0,  0,
                         0,   0,  0
                     },
                     Impact_Resistance = 10,
                     Damage_Protection = 3,
-                    Stamina_Use_Penalty = 0f,
-                    Mana_Use_Modifier = 0f,
-                    Movement_Penalty = 0f,
+                    BarrierProtection = 3,
+                    Stamina_Use_Penalty = 4f,
+                    Mana_Use_Modifier = 15f,
+                    Movement_Penalty = 9f,
                     Pouch_Bonus = 0,
                     Heat_Protection = 0,
                     Cold_Protection = 0,
+                    Corruption_Protection = 5,
                 },
                 SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
-
-                ItemVisuals = new SL_ItemVisual()
-                {
-                    Prefab_Name = "faraam_helmet_Prefab",
-                    Prefab_AssetBundle = "faraam_helmet",
-                    Prefab_SLPack = CrusadersEquipment.ModFolderName,
-                    PositionOffset = new UnityEngine.Vector3(-0.03f, 0, 0)
-                },
+                Class = Armor.ArmorClass.Heavy,
+                //ItemVisuals = new SL_ArmorVisuals()
+                //{
+                //    HideFace = false,
+                //    HideHair = true,
+                //    Prefab_Name = "faraam_helmet_Prefab",
+                //    Prefab_AssetBundle = "faraam_helmet",
+                //    Prefab_SLPack = CrusadersEquipment.ModFolderName,
+                //    Position = new UnityEngine.Vector3(0, 0, 0),
+                //},
+                //SpecialFemaleItemVisuals = new SL_ArmorVisuals()
+                //{
+                //    HideFace = false,
+                //    HideHair = true,
+                //    Prefab_Name = "faraam_helmet_Prefab",
+                //    Prefab_AssetBundle = "faraam_helmet",
+                //    Prefab_SLPack = CrusadersEquipment.ModFolderName,
+                //    Position = new UnityEngine.Vector3(0,0,0)
+                //},
+                //SpecialItemVisuals = new SL_ArmorVisuals()
+                //{
+                //    HideFace = false,
+                //    HideHair = true,
+                //    Prefab_Name = "faraam_helmet_Prefab",
+                //    Prefab_AssetBundle = "faraam_helmet",
+                //    Prefab_SLPack = CrusadersEquipment.ModFolderName,
+                //    Position = new UnityEngine.Vector3(0, 0, 0)
+                //},
             };
             myitem.ApplyTemplate();
             return ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);

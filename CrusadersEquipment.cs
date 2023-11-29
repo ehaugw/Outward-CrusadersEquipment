@@ -25,7 +25,7 @@
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "3.0.5";
+        public const string VERSION = "3.0.6";
         public const string NAME = "Crusaders Equipment";
 
         public static string ModFolderName = Directory.GetParent(typeof(CrusadersEquipment).Assembly.Location).Name.ToString();
