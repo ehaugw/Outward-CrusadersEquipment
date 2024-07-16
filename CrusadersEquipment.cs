@@ -119,6 +119,7 @@
             MakeGoldToSilverRecipe();
             FaraamLongsword.MakeItem();
             FaraamHelmet.MakeItem();
+            AshFilterMask.MakeItem();
             RangersHood.MakeItem();
             RangersHood.MakeRecipes();
 
