@@ -25,6 +25,7 @@ namespace CrusadersEquipment
 
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
+                    IDs.MaulShoveTag,
                     IDs.BastardTag,
                     IDs.BladeTag,
                     IDs.WeaponTag,
