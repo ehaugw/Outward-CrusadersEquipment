@@ -26,6 +26,30 @@ assemble:
 	cp -u resources/icons/adamantine_ingot.png                 public/$(sideloaderpath)/Items/AdamantineIngot/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/AncientRelic/Textures
 	cp -u resources/icons/ancient_relic.png                    public/$(sideloaderpath)/Items/AncientRelic/Textures/icon.png
+
+
+	mkdir -p public/$(sideloaderpath)/Items/RangerBoots/Textures/mat_cha_masterTrader
+	cp -u resources/icons/ranger_boots.png                     public/$(sideloaderpath)/Items/RangerBoots/Textures/icon.png
+	cp -u resources/textures/ranger_boots_gen.png              public/$(sideloaderpath)/Items/RangerBoots/Textures/mat_cha_masterTrader/_GenTex.png
+	cp -u resources/textures/ranger_boots_main.png             public/$(sideloaderpath)/Items/RangerBoots/Textures/mat_cha_masterTrader/_MainTex.png
+	cp -u resources/textures/ranger_boots_norm.png             public/$(sideloaderpath)/Items/RangerBoots/Textures/mat_cha_masterTrader/_NormTex.png
+	cp -u resources/textures/ranger_boots_det_norm.png         public/$(sideloaderpath)/Items/RangerBoots/Textures/mat_cha_masterTrader/_DetNormTex.png
+	cp -u resources/textures/ranger_boots_det_mask.png         public/$(sideloaderpath)/Items/RangerBoots/Textures/mat_cha_masterTrader/_DetMaskTex.png
+	cp -u resources/textures/ranger_boots_spec_color.png       public/$(sideloaderpath)/Items/RangerBoots/Textures/mat_cha_masterTrader/_SpecColorTex.png
+	cp -u resources/textures/ranger_boots.xml                  public/$(sideloaderpath)/Items/RangerBoots/Textures/mat_cha_masterTrader/properties.xml
+
+	mkdir -p public/$(sideloaderpath)/Items/WolfRangerArmor/Textures/mat_cha_WolfBattleMedicArmor
+	cp -u resources/icons/wolf_ranger_armor.png                public/$(sideloaderpath)/Items/WolfRangerArmor/Textures/icon.png
+	cp -u resources/textures/wolf_ranger_armor_gen.png         public/$(sideloaderpath)/Items/WolfRangerArmor/Textures/mat_cha_WolfBattleMedicArmor/_GenTex.png
+	cp -u resources/textures/wolf_ranger_armor_main.png        public/$(sideloaderpath)/Items/WolfRangerArmor/Textures/mat_cha_WolfBattleMedicArmor/_MainTex.png
+	cp -u resources/textures/wolf_ranger_armor_norm.png        public/$(sideloaderpath)/Items/WolfRangerArmor/Textures/mat_cha_WolfBattleMedicArmor/_NormTex.png
+	cp -u resources/textures/wolf_ranger_armor.xml             public/$(sideloaderpath)/Items/WolfRangerArmor/Textures/mat_cha_WolfBattleMedicArmor/properties.xml
+	mkdir -p public/$(sideloaderpath)/Items/RangersHood/Textures/mat_cha_beggarMaleArmorA
+	cp -u resources/icons/ranger_hood.png                      public/$(sideloaderpath)/Items/RangersHood/Textures/icon.png
+	cp -u resources/textures/ranger_hood_gen.png               public/$(sideloaderpath)/Items/RangersHood/Textures/mat_cha_beggarMaleArmorA/_GenTex.png
+	cp -u resources/textures/ranger_hood_main.png              public/$(sideloaderpath)/Items/RangersHood/Textures/mat_cha_beggarMaleArmorA/_MainTex.png
+	cp -u resources/textures/ranger_hood_norm.png              public/$(sideloaderpath)/Items/RangersHood/Textures/mat_cha_beggarMaleArmorA/_NormTex.png
+	cp -u resources/textures/ranger_hood.xml                   public/$(sideloaderpath)/Items/RangersHood/Textures/mat_cha_beggarMaleArmorA/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/mat_cha_runicArmor
 	cp -u resources/icons/crusaders_plate_armor.png            public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/icon.png
 	cp -u resources/textures/crusaders_plate_armor_gen.png     public/$(sideloaderpath)/Items/CrusadersPlateArmor/Textures/mat_cha_runicArmor/_GenTex.png

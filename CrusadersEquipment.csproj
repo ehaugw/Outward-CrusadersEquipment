@@ -113,6 +113,9 @@
     <Compile Include="Enchants\Lingering.cs" />
     <Compile Include="Enchants\Doomsayer.cs" />
     <Compile Include="Items\AdamantineIngot.cs" />
+    <Compile Include="Items\AshFilterMask.cs" />
+    <Compile Include="Items\RangerBoots.cs" />
+    <Compile Include="Items\WolfRangerArmor.cs" />
     <Compile Include="Items\RangersHood.cs" />
     <Compile Include="Items\FaraamHelmet.cs" />
     <Compile Include="Items\FaraamLongsword.cs" />
