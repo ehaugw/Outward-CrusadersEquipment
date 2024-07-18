@@ -25,7 +25,7 @@
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "3.0.8";
+        public const string VERSION = "3.0.9";
         public const string NAME = "Crusaders Equipment";
 
         public static string ModFolderName = Directory.GetParent(typeof(CrusadersEquipment).Assembly.Location).Name.ToString();
@@ -65,6 +65,8 @@
         internal void Awake()
         {
             Instance = this;
+
+            NamelessManNPC.Init();
 
             SL.BeforePacksLoaded += OnBeforePacksLoaded;
             SL.OnPacksLoaded += OnPackLoaded;

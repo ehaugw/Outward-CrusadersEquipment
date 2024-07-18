@@ -59,6 +59,10 @@
       <Project>{69b2c7b7-d715-4002-b009-f84ada52f8cc}</Project>
       <Name>SideLoader</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SynchronizedWorldObjects\SynchronizedWorldObjects.csproj">
+      <Project>{bada105e-b03e-49e0-a87e-95af55944022}</Project>
+      <Name>SynchronizedWorldObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TinyHelper\TinyHelper.csproj">
       <Project>{5bff01dc-4eae-4eba-9b1e-fdf0cfe577f2}</Project>
       <Name>TinyHelper</Name>
@@ -135,6 +139,7 @@
     <Compile Include="Items\ThickWhitePaint.cs" />
     <Compile Include="Items\ZealotsArmor.cs" />
     <Compile Include="Items\ZealotsBoots.cs" />
+    <Compile Include="NPCs\NamelessManNPC.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
