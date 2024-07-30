@@ -26,6 +26,9 @@ namespace CrusadersEquipment
                     Mana_Use_Modifier = 0f,
                     Movement_Penalty = 0f,
                     Pouch_Bonus = 2,
+
+                    Heat_Protection = 7,
+                    Cold_Protection = 7,
                 },
                 VisualDetectabilityAdd = -6,
 
