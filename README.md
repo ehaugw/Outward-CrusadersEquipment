@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at July 16, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at July 30, 2024. 
 
 
 
@@ -20,6 +20,13 @@ What's the purpose of "Crusader's Equipment"?
 # Features
 
 "Crusader's Equipment" implements the following items to the game:
+
+**Faraam Longsword** Must be bought from nameless man in the slums of Levant.
+
+* Damage: 57
+* Speed: 0.8
+* Impact: 35
+* Custom Tags: [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard"), **Shove**.
 
 **Puresteel Longsword** Recipe scroll can be bought in Monsoon
 
@@ -114,6 +121,16 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.0.10
+
+  * **Wolf Ranger's Armor**
+
+    * Cold Weather Resist from 0 to 7
+    * Hot Weather Resist from 0 to 7
+  * New icon for **Faraam Longsword** and **Heavy Plate Armor**
+* Version 3.0.9
+
+  * A nameless man in the levant slums sells **Faraam Longsword**
 * Version 3.0.8
 
   * Bump version to include new CustomWeaponBehavior version with improved maul shove speeds and impact damages
