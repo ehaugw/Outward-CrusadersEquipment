@@ -82,7 +82,7 @@ assemble:
 	cp -u resources/textures/crusaders_shield_main.png         public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/_MainTex.png
 	cp -u resources/textures/crusaders_shield.xml              public/$(sideloaderpath)/Items/CrusadersShield/Textures/mat_cha_crimsonPlateArmor/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain
-	# cp -u resources/icons/holy_avenger_no_inscription.png      public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/icon.png
+	cp -u resources/icons/heavy_plate_armor.png                public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/icon.png
 	cp -u $(exports)/heavy_plate_armor/_GenTex.png             public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/_GenTex.png
 	cp -u $(exports)/heavy_plate_armor/_MainTex.png            public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/_MainTex.png
 	cp -u $(exports)/heavy_plate_armor/_NormTex.png            public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/_NormTex.png
