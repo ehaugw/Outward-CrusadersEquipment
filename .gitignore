@@ -3,6 +3,7 @@ obj
 public/
 resources/manifest.json
 thunderstore/
+*.painter_lock
 CrusadersEquipment_thunderstore.zip
 resources/artsource/exports/corrupted_longsword/
 resources/artsource/exports/puresteel_longsword/
