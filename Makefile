@@ -134,6 +134,9 @@ unity:
 	cp resources/artsource/faraam_longsword.fbx                                     $(unityassets)/faraam_longsword.fbx
 	cp resources/artsource/faraam_helmet.fbx                                        $(unityassets)/faraam_helmet.fbx
 	cp resources/artsource/corrupted_longsword.fbx                                  $(unityassets)/corrupted_longsword.fbx
+	cp $(exports)/faraam_longsword/faraam_longsword_AlbedoTransparency.png          $(unityassets)/faraam_longsword_AlbedoTransparency.png
+	cp $(exports)/faraam_longsword/faraam_longsword_MetallicSmoothness.png          $(unityassets)/faraam_longsword_MetallicSmoothness.png
+	cp $(exports)/faraam_longsword/faraam_longsword_Normal.png                      $(unityassets)/faraam_longsword_Normal.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_AlbedoTransparency.png    $(unityassets)/corrupted_longsword_AlbedoTransparency.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_MetallicSmoothness.png    $(unityassets)/corrupted_longsword_MetallicSmoothness.png
 	cp $(exports)/corrupted_longsword/corrupted_longsword_Normal.png                $(unityassets)/corrupted_longsword_Normal.png
