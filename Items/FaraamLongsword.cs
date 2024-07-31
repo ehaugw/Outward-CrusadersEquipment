@@ -34,7 +34,7 @@ namespace CrusadersEquipment
                 StatsHolder = new SL_WeaponStats()
                 {
                     BaseValue = 2000,
-                    RawWeight = 9f,
+                    RawWeight = 8f,
                     MaxDurability = 750,
                     AttackSpeed = weaponData[2],
                     BaseDamage = new List<SL_Damage>() { new SL_Damage() { Damage = weaponData[3], Type = DamageType.Types.Physical } },
@@ -66,14 +66,8 @@ namespace CrusadersEquipment
             myitem.ApplyTemplate();
             Item item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
 
-            var bonusDamage = TinyGameObjectManager.GetOrMake(item.transform, "Effects", true, true).gameObject.AddComponent<AffectStat>();
+            //TinyItemManager.AddEnchantingOption(myitem.New_ItemID, IDs.weightlessEnchantID);
 
-            var tagSelectorList = new TagSourceSelector[] { new TagSourceSelector(TagSourceManager.Instance.GetTag(IDs.weaponSkilllDamageModifier)) };
-            bonusDamage.AffectedStat = new TagSourceSelector(TagSourceManager.Instance.GetTag(IDs.allDamagesTag));
-
-            bonusDamage.Tags = tagSelectorList;
-            bonusDamage.IsModifier = true;
-            bonusDamage.Value = 10;
             return item;
         }
     }
