@@ -4,13 +4,13 @@
     using InstanceIDs;
     using TinyHelper;
 
-    public class AshFilterMask
+    public class NobleMask
     {
         public static Item MakeItem()
         {
             var myitem = new SL_Equipment()
             {
-                Target_ItemID = IDs.ashFilterMaskID,
+                Target_ItemID = IDs.nobleMaskID,
                 New_ItemID = -1,
                 Description = "Fully prevents Plague",
 
