@@ -22,7 +22,37 @@ namespace CrusadersEquipment
                 Description = "",
                 StatsHolder = new SL_EquipmentStats()
                 {
-                    
+                    BaseValue = 250,
+                    RawWeight = 1.0f,
+                    MaxDurability = 200,
+
+                    //Physical = 0,
+                    //Ethereal = 1,
+                    //Decay = 2,
+                    //Electric = 3,
+                    //Frost = 4,
+                    //Fire = 5,
+                    //DarkOLD = 6,
+                    //LightOLD = 7,
+                    //Raw = 8,
+                    //Count = 9
+
+                    Damage_Resistance = new float[]
+                    {
+                        7,  0,  0,
+                        0,  0,  0,
+                        0,  0,  0,
+                    },
+
+                    Impact_Resistance = 6,
+                    Damage_Protection = 1,
+                    Stamina_Use_Penalty = 0f,
+                    Mana_Use_Modifier = 0f,
+                    Movement_Penalty = -15f,
+                    Pouch_Bonus = 2,
+                    Heat_Protection = 5,
+                    Cold_Protection = 5,
+                    Corruption_Protection = 5,
                 },
                 VisualDetectabilityAdd = -3,
 
