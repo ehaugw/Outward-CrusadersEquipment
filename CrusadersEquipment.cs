@@ -69,6 +69,7 @@
             Instance = this;
 
             NamelessManNPC.Init();
+            RangerHermitNPC.Init();
 
             SL.BeforePacksLoaded += OnBeforePacksLoaded;
             SL.OnPacksLoaded += OnPackLoaded;

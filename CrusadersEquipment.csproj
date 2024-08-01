@@ -149,6 +149,8 @@
     <Compile Include="ModifierClasses\TagWeaponProficiencyModifier.cs" />
     <Compile Include="ModifierClasses\ExpertiseProficiencyModifier.cs" />
     <Compile Include="NPCs\NamelessManNPC.cs" />
+    <Compile Include="NPCs\RangerHermitNPC.cs" />
+    <Compile Include="QuestTrackers\RangerTracker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
