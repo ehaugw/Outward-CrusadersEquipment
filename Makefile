@@ -6,7 +6,7 @@ exports = resources/artsource/exports
 unityassets = resources/unity/HolyAvengerBastard/Assets
 unityassetbundles = resources/unity/HolyAvengerBastard/Assets/AssetBundles
 
-dependencies = HolyDamageManager TinyHelper CustomWeaponBehaviour EffectSourceConditions ImpendingDoom
+dependencies = SynchronizedWorldObjects HolyDamageManager TinyHelper CustomWeaponBehaviour EffectSourceConditions ImpendingDoom
 
 assemble:
 	# common for all mods
