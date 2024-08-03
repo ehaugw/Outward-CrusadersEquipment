@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at July 30, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at August 03, 2024. 
 
 
 
@@ -20,6 +20,55 @@ What's the purpose of "Crusader's Equipment"?
 # Features
 
 "Crusader's Equipment" implements the following items to the game:
+
+**Heavy Plate Armor**
+
+* 5 physical protection
+* 28 physical resistance
+* 26 impact resistance
+* 5% physical damage bonus
+* 530 durability
+* 18 weight6% stamina use penalty
+* 10% movement speed penalty
+* -5 cold weather protection
+
+**Ranger's Hood**
+
+* 1 physical protection
+* 8 physical resistance
+* 20 decay resistance
+* 20 cold resistance
+* 20 fire resistance
+* 3 impact resistance
+* 300 durability
+* 1 weight5% stamina use bonus
+* 7 cold weather protection
+* 7 hot weather protection
+* 15 corruption protection
+
+**Ranger's Boots**
+
+* 1 physical protection
+* 7 physical resistance
+* 6 impact resistance
+* 200 durability
+* 1 weight15% movement speed bonus
+* 5 cold weather protection
+* 5 hot weather protection
+* 5 corruption protection
+* 2 pouch bonus
+
+**Wolf Ranger's Armor**
+
+* 2 physical protection
+* 20 physical resistance
+* 14 impact resistance
+* 500 durability
+* 12 weight5% movement speed bonus
+* 8 cold weather protection
+* 5 hot weather protection
+* 15 corruption protection
+* 8 pouch bonus
 
 **Faraam Longsword** Must be bought from nameless man in the slums of Levant.
 
@@ -121,12 +170,17 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.0.11
+
+  * Fix: Include SynchronizedWorldObjects, which is required for spawning the nameless man
+  * New texture for **Wolf Ranger's Armor**
+  * Massively tweaked the stats for Ranger's equipment
+  * **Faraam Longsword**
+
+    * Weight from 9 to 8
+    * Removed 10% damage bonus to weapon skills
 * Version 3.0.10
 
-  * **Wolf Ranger's Armor**
-
-    * Cold Weather Resist from 0 to 7
-    * Hot Weather Resist from 0 to 7
   * New icon for **Faraam Longsword** and **Heavy Plate Armor**
 * Version 3.0.9
 
@@ -291,6 +345,9 @@ What's the purpose of "Crusader's Equipment"?
 * [Vagabond](https://outward.thunderstore.io/package/ehaugw/Vagabond/ "Vagabond")
 
   * Provide positional mechanics, beast taming, dirty tricks and an enhanced survival experience.
+* [Weapon Repair Kit](https://thunderstore.io/c/outward/p/ehaugw/WeaponRepairKit "Weapon Repair Kit")
+
+  * Repair your weapons on the fly!
 
 
 
