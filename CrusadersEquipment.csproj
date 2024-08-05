@@ -114,6 +114,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enchants\Expertise.cs" />
     <Compile Include="Enchants\Lingering.cs" />
     <Compile Include="Enchants\Doomsayer.cs" />
     <Compile Include="Items\AdamantineIngot.cs" />

@@ -77,6 +77,7 @@
 
             Doomsayer.MakeEnchant();
             Lingering.MakeEnchant();
+            Expertise.MakeEnchant();
         }
 
         public Trainer altarTrainer;
