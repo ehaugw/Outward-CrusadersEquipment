@@ -12,10 +12,12 @@
     using ImpendingDoom;
     using System.IO;
     using TinyHelper;
+    using Proficiencies;
 
     [BepInPlugin(GUID, NAME, VERSION)]
     [BepInDependency(SL.GUID, BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency(TinyHelper.GUID, TinyHelper.VERSION)]
+    [BepInDependency(Proficiencies.GUID, Proficiencies.VERSION)]
     [BepInDependency(ImpendingDoomMod.GUID, ImpendingDoomMod.VERSION)]
     [BepInDependency(HolyDamageManager.HolyDamageManager.GUID, HolyDamageManager.HolyDamageManager.VERSION)]
 
@@ -78,12 +80,18 @@
             Doomsayer.MakeEnchant();
             Lingering.MakeEnchant();
             Expertise.MakeEnchant();
+
+            Proficiencies.IWeaponProfiencyFromItemSources.Add(new ExpertiseWeaponProficiencyModifier());
+            Proficiencies.IWeaponProfiencyFromItemSources.Add(new TagWeaponProficiencyModifier());
         }
 
         public Trainer altarTrainer;
 
         private void OnBeforePacksLoaded()
         {
+            TinyTagManager.GetOrMakeTag(IDs.WeaponProficiency1Tag);
+            TinyTagManager.GetOrMakeTag(IDs.WeaponProficiency2Tag);
+
         }
         private void OnPackLoaded()
         {
