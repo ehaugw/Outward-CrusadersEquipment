@@ -59,7 +59,9 @@ namespace CrusadersEquipment
                 SubfolderName = SubfolderName,
             };
             myitem.ApplyTemplate();
-            return ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
+            var item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
+            CustomItems.SetItemTags(item, TinyTagManager.GetSafeTags(new string[] { IDs.WeaponProficiency1Tag }), false);
+            return item;
         }
 
         public static Item MakeRecipes()
