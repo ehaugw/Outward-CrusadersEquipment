@@ -170,6 +170,10 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.0.13
+
+  * Ranger hermit in Emmerkar sells **Wolf Ranger's Armor**
+  * **Wolf Ranger's Armor** has a new icon
 * Version 3.0.12
 
   * Make Expertise enchant, which gives 0.1 speed and 5 weapon proficiency
