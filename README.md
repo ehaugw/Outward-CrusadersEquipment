@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at August 03, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at August 06, 2024. 
 
 
 
@@ -170,6 +170,10 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.0.12
+
+  * Make Expertise enchant, which gives 0.1 speed and 5 weapon proficiency
+  * Give weapon proficiency to ranger equipment
 * Version 3.0.11
 
   * Fix: Include SynchronizedWorldObjects, which is required for spawning the nameless man
