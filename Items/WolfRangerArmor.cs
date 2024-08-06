@@ -60,7 +60,7 @@ namespace CrusadersEquipment
             };
             myitem.ApplyTemplate();
             var item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
-            CustomItems.SetItemTags(item, TinyTagManager.GetSafeTags(new string[] { IDs.WeaponProficiency1Tag }), false);
+            CustomItems.SetItemTags(item, TinyTagManager.GetSafeTags(new string[] { IDs.WeaponProficiency2Tag }), false);
             return item;
         }
 
