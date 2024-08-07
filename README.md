@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at August 06, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at August 07, 2024. 
 
 
 
@@ -45,6 +45,7 @@ What's the purpose of "Crusader's Equipment"?
 * 7 cold weather protection
 * 7 hot weather protection
 * 15 corruption protection
+* 1 **Weapon Proficiency**
 
 **Ranger's Boots**
 
@@ -57,6 +58,7 @@ What's the purpose of "Crusader's Equipment"?
 * 5 hot weather protection
 * 5 corruption protection
 * 2 pouch bonus
+* 1 **Weapon Proficiency**
 
 **Wolf Ranger's Armor**
 
@@ -69,6 +71,7 @@ What's the purpose of "Crusader's Equipment"?
 * 5 hot weather protection
 * 15 corruption protection
 * 8 pouch bonus
+* 2 **Weapon Proficiency**
 
 **Faraam Longsword** Must be bought from nameless man in the slums of Levant.
 
@@ -164,12 +167,42 @@ What's the purpose of "Crusader's Equipment"?
 
 * Crafting component used to make items from this item pack.
 
+"Crusader's Equipment" implements the following enchants to the game:
+
+**Expertise**
+
+* Increases the **Weapon Proficiency** of the enchanted item by 5
+* Can be applied to 
+
+  * **Faraam Longsword**
+* Recipe: Apollo Incense - north close, south close, east far, west far
+
+**Doomsayer**
+
+* Causes [Impending Doom](https://outward.thunderstore.io/package/ehaugw/Crusader/ "Impending Doom") to occacionally apply to creatures that you hit and spread to nearby creatures
+* Can be applied to 
+
+  * Any [Holy](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Holy") weapon
+* Recipe: Spire of Light, Luna Incense - north close, south close
+
+**Lingering**
+
+* Imbues on the weapon last 10 seconds longer
+* Can be applied to 
+
+  * **Puresteel Longsword**
+  * **Corrupted Longsword**
+* Recipe: Ancestor's Resting Place, Sylphina Incense - east close, west close
+
 
 
 
 # Patch notes
 
 
+* Version 3.0.14
+
+  * **Wolf Ranger's Armor** **Weapon Proficiency** from 1 to 2
 * Version 3.0.13
 
   * Ranger hermit in Emmerkar sells **Wolf Ranger's Armor**
@@ -356,6 +389,9 @@ What's the purpose of "Crusader's Equipment"?
 * [Weapon Repair Kit](https://thunderstore.io/c/outward/p/ehaugw/WeaponRepairKit "Weapon Repair Kit")
 
   * Repair your weapons on the fly!
+* [Rune of Protection](https://thunderstore.io/c/outward/p/ehaugw/RuneOfProtection "Rune of Protection")
+
+  * Enable manaless characters to gain Runic Protection through a limited consumable
 
 
 
