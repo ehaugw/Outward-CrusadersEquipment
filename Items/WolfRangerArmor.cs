@@ -61,6 +61,7 @@ namespace CrusadersEquipment
             myitem.ApplyTemplate();
             var item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
             CustomItems.SetItemTags(item, TinyTagManager.GetSafeTags(new string[] { IDs.WeaponProficiency2Tag }), false);
+            TinyItemManager.AddEnchantingOption(myitem.New_ItemID, IDs.cocoonEnchantID);
             return item;
         }
 
