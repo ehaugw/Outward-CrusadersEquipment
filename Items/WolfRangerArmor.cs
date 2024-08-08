@@ -54,7 +54,7 @@ namespace CrusadersEquipment
                     Corruption_Protection = 15,
                     Health_Regen = 0.1f,
                 },
-                VisualDetectabilityAdd = -600,
+                VisualDetectabilityAdd = -6,
                 SLPackName = CrusadersEquipment.ModFolderName,
                 SubfolderName = SubfolderName,
             };
