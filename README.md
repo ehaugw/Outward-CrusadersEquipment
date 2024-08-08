@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at August 07, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at August 08, 2024. 
 
 
 
@@ -41,9 +41,7 @@ What's the purpose of "Crusader's Equipment"?
 * 20 fire resistance
 * 3 impact resistance
 * 300 durability
-* 1 weight5% stamina use bonus
-* 7 cold weather protection
-* 7 hot weather protection
+* 1 weight5 cold weather protection
 * 15 corruption protection
 * 1 **Weapon Proficiency**
 
@@ -62,12 +60,11 @@ What's the purpose of "Crusader's Equipment"?
 
 **Wolf Ranger's Armor**
 
-* 2 physical protection
+* 3 physical protection
 * 20 physical resistance
 * 14 impact resistance
 * 500 durability
-* 12 weight5% movement speed bonus
-* 8 cold weather protection
+* 12 weight8 cold weather protection
 * 5 hot weather protection
 * 15 corruption protection
 * 8 pouch bonus
@@ -200,6 +197,21 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.0.15
+
+  * **Ranger's Hood**
+
+    * Stamin cost reduction from 5 to 0
+    * Hot weather defense from 7 to 0
+    * Cold weather defense from 7 to 5
+  * **Wolf Ranger's Armor**
+
+    * Mana cost penalty from 0% to 10%
+    * Hot weather defense from 5 to 0
+    * Movement speed bonus from 5% to 0%
+    * Protection from 2 to 3
+    * Enabled for **Cocoon**
+    * Pouch bonus from 8 to 6
 * Version 3.0.14
 
   * **Wolf Ranger's Armor** **Weapon Proficiency** from 1 to 2
