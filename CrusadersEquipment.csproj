@@ -118,6 +118,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enchants\Footwork.cs" />
     <Compile Include="Enchants\Expertise.cs" />
     <Compile Include="Enchants\Lingering.cs" />
     <Compile Include="Enchants\Doomsayer.cs" />
@@ -146,6 +147,7 @@
     <Compile Include="Items\ThickWhitePaint.cs" />
     <Compile Include="Items\ZealotsArmor.cs" />
     <Compile Include="Items\ZealotsBoots.cs" />
+    <Compile Include="ModifierClasses\FootworkWeaponProficiencyModifier.cs" />
     <Compile Include="ModifierClasses\TagWeaponProficiencyModifier.cs" />
     <Compile Include="ModifierClasses\ExpertiseProficiencyModifier.cs" />
     <Compile Include="NPCs\NamelessManNPC.cs" />

@@ -81,8 +81,10 @@
             Doomsayer.MakeEnchant();
             Lingering.MakeEnchant();
             Expertise.MakeEnchant();
+            Footwork.MakeEnchant();
 
             Proficiencies.IWeaponProfiencyFromItemSources.Add(new ExpertiseWeaponProficiencyModifier());
+            Proficiencies.IWeaponProfiencyFromItemSources.Add(new FootworkWeaponProficiencyModifier());
             Proficiencies.IWeaponProfiencyFromItemSources.Add(new TagWeaponProficiencyModifier());
         }
 
