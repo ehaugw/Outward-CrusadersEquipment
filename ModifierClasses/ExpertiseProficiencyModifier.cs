@@ -15,7 +15,7 @@ namespace CrusadersEquipment
             float result = 0f;
             if (item is Equipment equipment && equipment.ActiveEnchantmentIDs.Contains(IDs.expertiseEnchantID))
             {
-                result = 5;
+                result = 3;
             }
             return result;
         }
