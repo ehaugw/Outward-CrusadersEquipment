@@ -17,7 +17,7 @@ namespace CrusadersEquipment
             var myEnchant = new SL_EnchantmentRecipe()
             {
                 Name = ItemName,
-                Description = "Increases movement speed by 3% and increases the scaling of miscellaneous skills and effects.",
+                Description = "Increases the scaling of miscellaneous skills and effects.",
                 EnchantmentID = EnchantID,
                 IncenseItemID = IDs.apolloIncenseID,
                 PillarDatas = new SL_EnchantmentRecipe.PillarData[]
@@ -63,14 +63,7 @@ namespace CrusadersEquipment
                 EnchantTime = 5,
                 Effects = new SL_EffectTransform[] { },
                 AddedDamages = new SL_EnchantmentRecipe.AdditionalDamage[] { },
-                StatModifications = new SL_EnchantmentRecipe.StatModification[] {
-                    new SL_EnchantmentRecipe.StatModification()
-                    {
-                        Stat = Enchantment.Stat.MovementSpeed,
-                        Value = 3f,
-                        Type = Enchantment.StatModification.BonusType.Modifier,
-                    }
-                },
+                StatModifications = new SL_EnchantmentRecipe.StatModification[] { },
                 FlatDamageAdded = new SL_Damage[] { },
                 DamageModifierBonus = new SL_Damage[] { },
                 DamageResistanceBonus= new SL_Damage[] { },
