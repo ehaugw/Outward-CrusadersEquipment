@@ -19,7 +19,7 @@ namespace CrusadersEquipment
                 Name = ItemName,
                 Description = "Increases the scaling of miscellaneous skills and effects.",
                 EnchantmentID = EnchantID,
-                IncenseItemID = IDs.apolloIncenseID,
+                IncenseItemID = IDs.monarchIncenseID,
                 PillarDatas = new SL_EnchantmentRecipe.PillarData[]
                 {
                     new SL_EnchantmentRecipe.PillarData()
@@ -30,18 +30,8 @@ namespace CrusadersEquipment
                     new SL_EnchantmentRecipe.PillarData()
                     {
                         Direction = SL_EnchantmentRecipe.Directions.South,
-                        IsFar = false
-                    },
-                    new SL_EnchantmentRecipe.PillarData()
-                    {
-                        Direction = SL_EnchantmentRecipe.Directions.East,
                         IsFar = true
                     },
-                    new SL_EnchantmentRecipe.PillarData()
-                    {
-                        Direction = SL_EnchantmentRecipe.Directions.West,
-                        IsFar = true
-                    }
                 },
                 CompatibleEquipment = new SL_EnchantmentRecipe.EquipmentData()
                 {
