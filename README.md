@@ -21,6 +21,12 @@ What's the purpose of "Crusader's Equipment"?
 
 "Crusader's Equipment" implements the following items to the game:
 
+**Gold Ring**
+
+* Has no inherent effect or stats, but can hold enchantments
+* Left hand equipment that counts as a free hand for bastard weapons and skills that requires an empty left hand
+* 0.1 weightEligible for the **Soul Within** enchant
+
 **Heavy Plate Armor**
 
 * 5 physical protection
@@ -31,6 +37,7 @@ What's the purpose of "Crusader's Equipment"?
 * 18 weight6% stamina use penalty
 * 10% movement speed penalty
 * -5 cold weather protection
+* Eligible for the **Warmaster enchant** enchant
 
 **Ranger's Hood**
 
@@ -58,6 +65,7 @@ What's the purpose of "Crusader's Equipment"?
 * 2 pouch bonus
 * 1 **Weapon Proficiency**
 * Can be enchanted with **Footwork**
+* Eligible for the **Footwork** enchant
 
 **Wolf Ranger's Armor**
 
@@ -71,7 +79,7 @@ What's the purpose of "Crusader's Equipment"?
 * 15 corruption protection
 * 6 pouch bonus
 * 2 **Weapon Proficiency**
-* Can be enchanted with **Cocoon**
+* Eligible for the **Cocoon** enchant
 
 **Faraam Longsword** Must be bought from nameless man in the slums of Levant.
 
@@ -79,7 +87,7 @@ What's the purpose of "Crusader's Equipment"?
 * Speed: 0.8
 * Impact: 35
 * Custom Tags: [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard"), **Shove**.
-* Can be enchanted with **Expertise**
+* Eligible for the **Expertise** enchant
 
 **Puresteel Longsword** Recipe scroll can be bought in Monsoon
 
@@ -87,11 +95,15 @@ What's the purpose of "Crusader's Equipment"?
 * Speed: 0.9
 * Impact: 30
 * Custom Tags: [Finesse](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Finesse"), [Holy](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Holy").
-* Increases the damage dealt with weapon skills by 10%.
+* Increases the damage dealt with weapon skills by 10%.Eligible for the **Lingering** enchant
 
 **Ancient Relic**
 
 * Legends has it that a relic like this was lost to a golden lich long time ago.
+
+**Soul Incense**
+
+* A special incense made by extracting souls from a curious relic.
 
 **Holy Water** Recipe scroll can be bought in Monsoon
 
@@ -178,6 +190,14 @@ What's the purpose of "Crusader's Equipment"?
   * **Faraam Longsword**
 * Recipe: Apollo Incense - north close, south close, east far, west far
 
+**Soul Within**
+
+* Gives 20 ethereal resistance, 10 fire resistance, 10 frost resistance, 10 lightnig resistance and 10 decay resistance, along with a 20 corruption protection penalty
+* Can be applied to 
+
+  * **Gold Ring**
+* Recipe: Soul Incense - north close, south close, east close, west close
+
 **Footwork**
 
 * Increases the **Weapon Proficiency** of the enchanted item by 1
@@ -209,6 +229,11 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.0.17
+
+  * Implement **Gold Ring**
+  * Implement **Soul Within**
+  * Implement **Soul Incense**
 * Version 3.0.16
 
   * **Expertise** proficiency bonus from 5 to 3
