@@ -90,6 +90,8 @@ assemble:
 	cp -u $(exports)/heavy_plate_armor/_NormTex.png            public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/_NormTex.png
 	cp -u $(exports)/heavy_plate_armor/_SpecColorTex.png       public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/_SpecColorTex.png
 	cp -u resources/textures/properties_color_spec.xml         public/$(sideloaderpath)/Items/HeavyPlateArmor/Textures/mat_cha_plateArmorPlain/properties.xml
+	mkdir -p public/$(sideloaderpath)/Items/GoldRing/Textures/
+	cp -u resources/icons/gold_ring.png                        public/$(sideloaderpath)/Items/GoldRing/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/FaraamHelmet/Textures/
 	cp -u resources/icons/faraam_helmet.png                    public/$(sideloaderpath)/Items/FaraamHelmet/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/FaraamLongsword/Textures/
@@ -132,12 +134,14 @@ assemble:
 	cp -u $(unityassetbundles)/faraam_helmet                                          	public/$(sideloaderpath)/AssetBundles/faraam_helmet
 	cp -u $(unityassetbundles)/corrupted_longsword                                     	public/$(sideloaderpath)/AssetBundles/corrupted_longsword
 	cp -u $(unityassetbundles)/puresteel_longsword                                     	public/$(sideloaderpath)/AssetBundles/puresteel_longsword
+	cp -u $(unityassetbundles)/gold_ring                                                public/$(sideloaderpath)/AssetBundles/gold_ring
 
 unity:
 	cp resources/artsource/puresteel_longsword.fbx                                  $(unityassets)/puresteel_longsword.fbx
 	cp resources/artsource/faraam_longsword.fbx                                     $(unityassets)/faraam_longsword.fbx
 	cp resources/artsource/faraam_helmet.fbx                                        $(unityassets)/faraam_helmet.fbx
 	cp resources/artsource/corrupted_longsword.fbx                                  $(unityassets)/corrupted_longsword.fbx
+	cp resources/artsource/gold_ring.fbx                                            $(unityassets)/gold_ring.fbx
 	cp $(exports)/faraam_longsword/faraam_longsword_AlbedoTransparency.png          $(unityassets)/faraam_longsword_AlbedoTransparency.png
 	cp $(exports)/faraam_longsword/faraam_longsword_MetallicSmoothness.png          $(unityassets)/faraam_longsword_MetallicSmoothness.png
 	cp $(exports)/faraam_longsword/faraam_longsword_Normal.png                      $(unityassets)/faraam_longsword_Normal.png
@@ -147,6 +151,9 @@ unity:
 	cp $(exports)/puresteel_longsword/puresteel_longsword_AlbedoTransparency.png    $(unityassets)/puresteel_longsword_AlbedoTransparency.png
 	cp $(exports)/puresteel_longsword/puresteel_longsword_MetallicSmoothness.png    $(unityassets)/puresteel_longsword_MetallicSmoothness.png
 	cp $(exports)/puresteel_longsword/puresteel_longsword_Normal.png                $(unityassets)/puresteel_longsword_Normal.png
+	cp $(exports)/gold_ring/gold_ring_AlbedoTransparency.png                        $(unityassets)/gold_ring_AlbedoTransparency.png
+	cp $(exports)/gold_ring/gold_ring_MetallicSmoothness.png                        $(unityassets)/gold_ring_MetallicSmoothness.png
+	cp $(exports)/gold_ring/gold_ring_Normal.png                                    $(unityassets)/gold_ring_Normal.png
 	
 publish:
 	make backup
