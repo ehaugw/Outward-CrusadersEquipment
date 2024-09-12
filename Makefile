@@ -110,6 +110,8 @@ assemble:
 	# cp -u resources/textures/properties_color_spec.xml         public/$(sideloaderpath)/Items/PuresteelLongsword/Textures/puresteel_longsword_Material/properties.xml
 	mkdir -p public/$(sideloaderpath)/Items/HolyWater/Textures
 	cp -u resources/icons/holy_water.png                       public/$(sideloaderpath)/Items/HolyWater/Textures/icon.png
+	mkdir -p public/$(sideloaderpath)/Items/SoulIncense/Textures/mat_env_propSlimeVilePus
+	cp -u resources/icons/soul_incense.png                     public/$(sideloaderpath)/Items/SoulIncense/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/ThickWhitePaint/Textures/mat_env_propSlimeVilePus
 	cp -u resources/icons/thick_white_paint.png                public/$(sideloaderpath)/Items/ThickWhitePaint/Textures/icon.png
 	cp -u resources/textures/thick_white_paint_main.png        public/$(sideloaderpath)/Items/ThickWhitePaint/Textures/mat_env_propSlimeVilePus/_MainTex.png

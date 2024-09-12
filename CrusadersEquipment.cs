@@ -142,9 +142,13 @@
             WolfRangerArmor.MakeRecipes();
             RangerBoots.MakeItem();
             RangerBoots.MakeRecipes();
+            SoulIncense.MakeItem();
+            SoulIncense.MakeRecipes();
             
             Doomsayer.MakeEnchantEffect();
             RadiantSpark.Init();
+
+            SoulWithin.MakeEnchant();
         }
 
         private void MakeGoldToSilverRecipe()
