@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at August 08, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at September 12, 2024. 
 
 
 
@@ -57,6 +57,7 @@ What's the purpose of "Crusader's Equipment"?
 * 5 corruption protection
 * 2 pouch bonus
 * 1 **Weapon Proficiency**
+* Can be enchanted with **Footwork**
 
 **Wolf Ranger's Armor**
 
@@ -64,11 +65,13 @@ What's the purpose of "Crusader's Equipment"?
 * 20 physical resistance
 * 14 impact resistance
 * 500 durability
-* 12 weight8 cold weather protection
+* 12 weight10% mana cost penalty
+* 8 cold weather protection
 * 5 hot weather protection
 * 15 corruption protection
-* 8 pouch bonus
+* 6 pouch bonus
 * 2 **Weapon Proficiency**
+* Can be enchanted with **Cocoon**
 
 **Faraam Longsword** Must be bought from nameless man in the slums of Levant.
 
@@ -76,6 +79,7 @@ What's the purpose of "Crusader's Equipment"?
 * Speed: 0.8
 * Impact: 35
 * Custom Tags: [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard"), **Shove**.
+* Can be enchanted with **Expertise**
 
 **Puresteel Longsword** Recipe scroll can be bought in Monsoon
 
@@ -168,11 +172,19 @@ What's the purpose of "Crusader's Equipment"?
 
 **Expertise**
 
-* Increases the **Weapon Proficiency** of the enchanted item by 5
+* Increases the **Weapon Proficiency** of the enchanted item by 3
 * Can be applied to 
 
   * **Faraam Longsword**
 * Recipe: Apollo Incense - north close, south close, east far, west far
+
+**Footwork**
+
+* Increases the **Weapon Proficiency** of the enchanted item by 1
+* Can be applied to 
+
+  * **Ranger's Boots**
+* Recipe: Monarch Incense - north close, south far
 
 **Doomsayer**
 
@@ -197,6 +209,11 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.0.16
+
+  * **Expertise** proficiency bonus from 5 to 3
+  * Implement **Footwork**
+  * Make **Rangers Boots** eligible for **Footwork**
 * Version 3.0.15
 
   * **Ranger's Hood**
