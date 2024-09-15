@@ -146,6 +146,8 @@
             GoldRing.MakeRecipe();
             SoulIncense.MakeItem();
             SoulIncense.MakeRecipes();
+            CharredHood.MakeItem();
+            CharredHood.MakeRecipes();
             
             Doomsayer.MakeEnchantEffect();
             RadiantSpark.Init();

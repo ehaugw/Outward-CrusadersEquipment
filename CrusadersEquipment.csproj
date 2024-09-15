@@ -129,6 +129,7 @@
     <Compile Include="Items\PathfinderMask.cs" />
     <Compile Include="Items\AshFilterMask.cs" />
     <Compile Include="Items\RangerBoots.cs" />
+    <Compile Include="Items\CharredHood.cs" />
     <Compile Include="Items\SoulIncense.cs" />
     <Compile Include="Items\WolfRangerArmor.cs" />
     <Compile Include="Items\RangersHood.cs" />
