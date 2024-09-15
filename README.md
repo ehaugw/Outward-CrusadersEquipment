@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at September 12, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at September 15, 2024. 
 
 
 
@@ -26,6 +26,18 @@ What's the purpose of "Crusader's Equipment"?
 * Has no inherent effect or stats, but can hold enchantments
 * Left hand equipment that counts as a free hand for bastard weapons and skills that requires an empty left hand
 * 0.1 weightEligible for the **Soul Within** enchant
+
+**Charred Hood**
+
+* 1 weight
+* 300 durability
+* 1 physical protection
+* 8 physical resistance
+* 15 decay resistance
+* 15 lightning resistance
+* 15 frost resistance
+* 3 impact resistance
+* 15% mana cost penalty
 
 **Heavy Plate Armor**
 
@@ -229,6 +241,9 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.0.18
+
+  * Implement **Charred Hood**
 * Version 3.0.17
 
   * Implement **Gold Ring**
