@@ -59,7 +59,7 @@ namespace CrusadersEquipment
                     IDs.HandsFreeTag,
                     IDs.ItemTag,
                     IDs.EquipmentTag,
-                    IDs.ArmorTag,
+                    IDs.RingTag,
                     IDs.SoulWithinCompatibleTag,
                 }),
 

@@ -118,6 +118,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enchants\AegisRing.cs" />
     <Compile Include="Enchants\SoulWithin.cs" />
     <Compile Include="Enchants\Footwork.cs" />
     <Compile Include="Enchants\Expertise.cs" />

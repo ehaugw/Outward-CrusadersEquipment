@@ -82,6 +82,7 @@
             Lingering.MakeEnchant();
             Expertise.MakeEnchant();
             Footwork.MakeEnchant();
+            AegisRing.MakeEnchant();
 
             Proficiencies.IWeaponProfiencyFromItemSources.Add(new ExpertiseWeaponProficiencyModifier());
             Proficiencies.IWeaponProfiencyFromItemSources.Add(new FootworkWeaponProficiencyModifier());
