@@ -100,6 +100,8 @@ assemble:
 	cp -u resources/icons/gold_ring.png                        public/$(sideloaderpath)/Items/GoldRing/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/FaraamHelmet/Textures/
 	cp -u resources/icons/faraam_helmet.png                    public/$(sideloaderpath)/Items/FaraamHelmet/Textures/icon.png
+	mkdir -p public/$(sideloaderpath)/Items/GnarledStaff/Textures/
+	cp -u resources/icons/gnarled_staff.png                    public/$(sideloaderpath)/Items/GnarledStaff/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/FaraamLongsword/Textures/
 	cp -u resources/icons/faraam_longsword.png                 public/$(sideloaderpath)/Items/FaraamLongsword/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/corruptedLongsword/Textures/ #corrupted_longsword_Material
@@ -136,6 +138,7 @@ assemble:
 
 	cp -u ../ImpendingDoom/resources/textures/impendingDoomIcon.png             public/$(sideloaderpath)/Texture2D/
 	
+	cp -u $(unityassetbundles)/gnarled_staff                                         	public/$(sideloaderpath)/AssetBundles/gnarled_staff
 	cp -u $(unityassetbundles)/faraam_longsword                                       	public/$(sideloaderpath)/AssetBundles/faraam_longsword
 	cp -u $(unityassetbundles)/faraam_helmet                                          	public/$(sideloaderpath)/AssetBundles/faraam_helmet
 	cp -u $(unityassetbundles)/corrupted_longsword                                     	public/$(sideloaderpath)/AssetBundles/corrupted_longsword
@@ -143,11 +146,15 @@ assemble:
 	cp -u $(unityassetbundles)/gold_ring                                                public/$(sideloaderpath)/AssetBundles/gold_ring
 
 unity:
+	cp resources/artsource/gnarled_staff.fbx                                        $(unityassets)/gnarled_staff.fbx
 	cp resources/artsource/puresteel_longsword.fbx                                  $(unityassets)/puresteel_longsword.fbx
 	cp resources/artsource/faraam_longsword.fbx                                     $(unityassets)/faraam_longsword.fbx
 	cp resources/artsource/faraam_helmet.fbx                                        $(unityassets)/faraam_helmet.fbx
 	cp resources/artsource/corrupted_longsword.fbx                                  $(unityassets)/corrupted_longsword.fbx
 	cp resources/artsource/gold_ring.fbx                                            $(unityassets)/gold_ring.fbx
+	cp $(exports)/gnarled_staff/gnarled_staff_AlbedoTransparency.png          $(unityassets)/gnarled_staff_AlbedoTransparency.png
+	cp $(exports)/gnarled_staff/gnarled_staff_MetallicSmoothness.png          $(unityassets)/gnarled_staff_MetallicSmoothness.png
+	cp $(exports)/gnarled_staff/gnarled_staff_Normal.png                      $(unityassets)/gnarled_staff_Normal.png
 	cp $(exports)/faraam_longsword/faraam_longsword_AlbedoTransparency.png          $(unityassets)/faraam_longsword_AlbedoTransparency.png
 	cp $(exports)/faraam_longsword/faraam_longsword_MetallicSmoothness.png          $(unityassets)/faraam_longsword_MetallicSmoothness.png
 	cp $(exports)/faraam_longsword/faraam_longsword_Normal.png                      $(unityassets)/faraam_longsword_Normal.png
