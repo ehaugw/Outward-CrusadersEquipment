@@ -244,12 +244,17 @@
     public class Weapon_AddImbueEffect
     {
         [HarmonyPrefix]
-        public static void Prefix(Weapon __instance, ref float _lifespan)
+        public static bool Prefix(Weapon __instance, ref float _lifespan)
         {
+            if (__instance.HasTag(TinyTagManager.GetOrMakeTag(IDs.StaffOffHandTag)))
+            {
+                return false;
+            }
             if (__instance.ActiveEnchantmentIDs.Contains(IDs.lingeringID))
             {
                 _lifespan += 10;
             }
+            return true;
         }
     }
 }
