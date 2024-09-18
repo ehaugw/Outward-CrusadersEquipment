@@ -28,6 +28,7 @@ namespace CrusadersEquipment
                     IDs.WeaponTag,
                     IDs.ItemTag,
                     IDs.StaffOffHandTag,
+                    IDs.FlameOfAnorCompatibleTag,
                 }),
                 StatsHolder = new SL_WeaponStats()
                 {
