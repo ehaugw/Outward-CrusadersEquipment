@@ -15,7 +15,7 @@ namespace CrusadersEquipment
         
         public static Item MakeItem()
         {
-            float[] weaponData = new[] { 5.2f, 30f, 0.9f, 48f };
+            float[] weaponData = new[] { 4.9f, 30f, 1f, 45f };
             var myitem = new SL_Weapon()
             {
                 Name = ItemName,
