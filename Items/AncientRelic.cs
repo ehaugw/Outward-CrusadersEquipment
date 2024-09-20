@@ -28,9 +28,6 @@ namespace CrusadersEquipment
                 SLPackName = CrusadersEquipment.ModFolderName,
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
-                    IDs.TrinketTag,
-                    IDs.HandsFreeTag,
-                    IDs.RelicTag,
                     IDs.ItemTag,
                 }),
                 SubfolderName = SubfolderName,
