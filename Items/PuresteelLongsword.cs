@@ -21,7 +21,7 @@ namespace CrusadersEquipment
                 Name = ItemName,
                 Target_ItemID = IDs.ironSwordID,
                 New_ItemID = IDs.puresteelLongswordID,
-                Description = "",
+                Description = "Increases weapon skills damage by 10%",
 
                 Tags = TinyTagManager.GetOrMakeTags(new string[]
                 {
