@@ -46,6 +46,11 @@ assemble:
 	cp -u resources/textures/wolf_ranger_armor_spec_color.png  public/$(sideloaderpath)/Items/WolfRangerArmor/Textures/mat_cha_WolfBattleMedicArmor/_SpecColorTex.png
 	cp -u resources/textures/properties_color_spec.xml         public/$(sideloaderpath)/Items/WolfRangerArmor/Textures/mat_cha_WolfBattleMedicArmor/properties.xml
 
+	mkdir -p public/$(sideloaderpath)/Items/OldDesertTunic/Textures/mat_cha_desertArmor
+	cp -u resources/icons/old_desert_tunic.png                 public/$(sideloaderpath)/Items/OldDesertTunic/Textures/icon.png
+	cp -u resources/textures/old_desert_tunic_main.png         public/$(sideloaderpath)/Items/OldDesertTunic/Textures/mat_cha_desertArmor/_MainTex.png
+	cp -u resources/textures/old_desert_tunic.xml              public/$(sideloaderpath)/Items/OldDesertTunic/Textures/mat_cha_desertArmor/properties.xml
+
 	mkdir -p public/$(sideloaderpath)/Items/CharredHood/Textures/mat_cha_beggarMaleArmorA
 	cp -u resources/icons/charred_hood.png                      public/$(sideloaderpath)/Items/CharredHood/Textures/icon.png
 	cp -u resources/textures/charred_hood_gen.png               public/$(sideloaderpath)/Items/CharredHood/Textures/mat_cha_beggarMaleArmorA/_GenTex.png

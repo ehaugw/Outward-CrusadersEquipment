@@ -151,7 +151,8 @@
             CharredHood.MakeItem();
             CharredHood.MakeRecipes();
             GnarledStaff.MakeItem();
-            
+            OldDesertTunic.MakeItem();
+
             Doomsayer.MakeEnchantEffect();
             RadiantSpark.Init();
 
