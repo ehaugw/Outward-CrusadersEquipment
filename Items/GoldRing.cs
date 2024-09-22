@@ -7,7 +7,6 @@ namespace CrusadersEquipment
 {
     using InstanceIDs;
     using SideLoader;
-    using EffectSourceConditions;
     using System;
     using UnityEngine;
 

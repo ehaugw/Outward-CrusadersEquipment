@@ -1,8 +1,5 @@
 ﻿using TinyHelper;
 using InstanceIDs;
-using UnityEngine;
-using System.Collections.Generic;
-using System;
 
 namespace CrusadersEquipment
 {
@@ -16,7 +13,7 @@ namespace CrusadersEquipment
             var spark = ResourcesPrefabManager.Instance.GetItemPrefab(IDs.sparkID) as Skill;
             var damagingBlast = spark.transform.Find("Effects").gameObject.GetComponents<ShootBlast>()[0].BaseBlast;
 
-            var extraEffects = TinyGameObjectManager.MakeFreshObject(EffectSourceConditions.EFFECTS_CONTAINER, true, true, damagingBlast.transform).transform;
+            var extraEffects = TinyGameObjectManager.MakeFreshObject(IDs.EFFECTS_CONTAINER, true, true, damagingBlast.transform).transform;
             //UnityEngine.Object.DontDestroyOnLoad(damagingBlast.gameObject);
 
             //var punctualDamage = extraEffects.gameObject.AddComponent<PunctualDamage>();
