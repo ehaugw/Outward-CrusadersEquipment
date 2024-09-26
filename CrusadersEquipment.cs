@@ -104,11 +104,9 @@
 
             puresteelLongswordInstance = PuresteelLongsword.MakeItem();
             lightMendersRelicInstance = AncientRelic.MakeItem();
-            adamantineIngotInstance = AdamantineIngot.MakeItem();
 
             corruptedLongswordRecipeInstance = CorruptedLongsword.MakeRecipes();
             puresteelLongswordRecipeInstance = PuresteelLongsword.MakeRecipes();
-            adamantineIngotRecipeInstance = AdamantineIngot.MakeRecipes();
 
             holyWaterInstance = HolyWaterItem.MakeItem();
             holyWaterRecipeInstance = HolyWaterItem.MakeRecipe();

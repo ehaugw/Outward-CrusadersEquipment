@@ -125,7 +125,6 @@
     <Compile Include="Enchants\Expertise.cs" />
     <Compile Include="Enchants\Lingering.cs" />
     <Compile Include="Enchants\Doomsayer.cs" />
-    <Compile Include="Items\AdamantineIngot.cs" />
     <Compile Include="Items\OldDesertTunic.cs" />
     <Compile Include="Items\GnarledStaff.cs" />
     <Compile Include="Items\GoldRing.cs" />

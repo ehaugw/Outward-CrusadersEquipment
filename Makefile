@@ -22,8 +22,6 @@ assemble:
 	mkdir -p public/$(sideloaderpath)/Texture2D
 	mkdir -p public/$(sideloaderpath)/AssetBundles
 	
-	mkdir -p public/$(sideloaderpath)/Items/AdamantineIngot/Textures
-	cp -u resources/icons/adamantine_ingot.png                 public/$(sideloaderpath)/Items/AdamantineIngot/Textures/icon.png
 	mkdir -p public/$(sideloaderpath)/Items/AncientRelic/Textures
 	cp -u resources/icons/ancient_relic.png                    public/$(sideloaderpath)/Items/AncientRelic/Textures/icon.png
 
