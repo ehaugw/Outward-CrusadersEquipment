@@ -9,7 +9,7 @@ namespace CrusadersEquipment
     public class PuresteelLongsword
     {
         public const string SubfolderName = "PuresteelLongsword";
-        public const string ItemName = "Puresteel Longsword";
+        public const string ItemName = "Ornate Longsword";
 
         //private static Item[] testItem;
         
@@ -91,8 +91,8 @@ namespace CrusadersEquipment
                 Ingredients = new List<SL_Recipe.Ingredient>() {
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.ancientRelicID },
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.goldIngotID },
-                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.adamantineID },
-                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.adamantineID}
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.purifyingQuartzID },
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.mysteriousBladeID },
                 },
                 UID = newUID,
             }.ApplyTemplate();
