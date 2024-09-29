@@ -255,6 +255,9 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.1.1
+
+  * Implement Flame of Anor relic interactions
 * Version 3.1.0
 
   * implement ring specific aegis
@@ -265,39 +268,39 @@ What's the purpose of "Crusader's Equipment"?
   * turn puresteel longsword into ornate longsword
 * Version 3.0.18
 
-  * Implement **Charred Hood**
+  * Implement Charred Hood
 * Version 3.0.17
 
-  * Implement **Gold Ring**
-  * Implement **Soul Within**
-  * Implement **Soul Incense**
+  * Implement Gold Ring
+  * Implement Soul Within
+  * Implement Soul Incense
 * Version 3.0.16
 
-  * **Expertise** proficiency bonus from 5 to 3
-  * Implement **Footwork**
-  * Make **Rangers Boots** eligible for **Footwork**
+  * Expertise proficiency bonus from 5 to 3
+  * Implement Footwork
+  * Make Rangers Boots eligible for Footwork
 * Version 3.0.15
 
-  * **Ranger's Hood**
+  * Ranger's Hood
 
     * Stamin cost reduction from 5 to 0
     * Hot weather defense from 7 to 0
     * Cold weather defense from 7 to 5
-  * **Wolf Ranger's Armor**
+  * Wolf Ranger's Armor
 
     * Mana cost penalty from 0% to 10%
     * Hot weather defense from 5 to 0
     * Movement speed bonus from 5% to 0%
     * Protection from 2 to 3
-    * Enabled for **Cocoon**
+    * Enabled for Cocoon
     * Pouch bonus from 8 to 6
 * Version 3.0.14
 
-  * **Wolf Ranger's Armor** **Weapon Proficiency** from 1 to 2
+  * Wolf Ranger's Armor Weapon Proficiency from 1 to 2
 * Version 3.0.13
 
-  * Ranger hermit in Emmerkar sells **Wolf Ranger's Armor**
-  * **Wolf Ranger's Armor** has a new icon
+  * Ranger hermit in Emmerkar sells Wolf Ranger's Armor
+  * Wolf Ranger's Armor has a new icon
 * Version 3.0.12
 
   * Make Expertise enchant, which gives 0.1 speed and 5 weapon proficiency
@@ -305,18 +308,18 @@ What's the purpose of "Crusader's Equipment"?
 * Version 3.0.11
 
   * Fix: Include SynchronizedWorldObjects, which is required for spawning the nameless man
-  * New texture for **Wolf Ranger's Armor**
+  * New texture for Wolf Ranger's Armor
   * Massively tweaked the stats for Ranger's equipment
-  * **Faraam Longsword**
+  * Faraam Longsword
 
     * Weight from 9 to 8
     * Removed 10% damage bonus to weapon skills
 * Version 3.0.10
 
-  * New icon for **Faraam Longsword** and **Heavy Plate Armor**
+  * New icon for Faraam Longsword and Heavy Plate Armor
 * Version 3.0.9
 
-  * A nameless man in the levant slums sells **Faraam Longsword**
+  * A nameless man in the levant slums sells Faraam Longsword
 * Version 3.0.8
 
   * Bump version to include new CustomWeaponBehavior version with improved maul shove speeds and impact damages
@@ -347,11 +350,11 @@ What's the purpose of "Crusader's Equipment"?
 * Version 3.0.5
 
   * Removed all relics as they were accidentally published by a mistake and are still work in progress.
-  * Added **Corrupted Longsword**.
-  * Remove note about applying and spreading [Impending Doom](https://outward.thunderstore.io/package/ehaugw/Crusader/ "Impending Doom") on **Puresteel Longsword** description.
+  * Added Corrupted Longsword.
+  * Remove note about applying and spreading Impending Doom on Puresteel Longsword description.
 * Version 3.0.4
 
-  * Properly remove **Crusader** dependency.
+  * Properly remove Crusader dependency.
 * Version 3.0.3
 
   * Use dynamic root path rather than hardcoded.
@@ -407,7 +410,7 @@ What's the purpose of "Crusader's Equipment"?
     * Movement speed bonus: 5% -> 0%.
 * Version 2.1.0
 
-  * Patched to work with [Outward SideLoader](https://outward.thunderstore.io/package/sinai-dev/SideLoader/ "Outward SideLoader") v3.1.9.
+  * Patched to work with Outward SideLoader v3.1.9.
 * Version 2.0.0
 
   * Can be played with (and only with) the base game update related to The Three Brothers.
@@ -416,7 +419,7 @@ What's the purpose of "Crusader's Equipment"?
   * **HolyDamageManager**
 
     * Added support for **HolyDamageManager**, which is used to set conveniently set the damage type of damage sources that are considered to be of divine origin.
-    * The following items are affected by the type specificed by **HolyDamageManager**:
+    * The following items are affected by the type specificed by HolyDamageManager:
 
       * **Crusader's Hood**
       * **Crusader's Boots**
