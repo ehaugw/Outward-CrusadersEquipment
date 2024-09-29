@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at September 15, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at September 29, 2024. 
 
 
 
@@ -21,11 +21,18 @@ What's the purpose of "Crusader's Equipment"?
 
 "Crusader's Equipment" implements the following items to the game:
 
+**Gnarled Staff**
+
+* Mechanically a dagger
+* Damage: 5
+* Impact: 40
+
 **Gold Ring**
 
 * Has no inherent effect or stats, but can hold enchantments
 * Left hand equipment that counts as a free hand for bastard weapons and skills that requires an empty left hand
 * 0.1 weightEligible for the **Soul Within** enchant
+* Eligible for the **Aegis** enchant
 
 **Charred Hood**
 
@@ -98,16 +105,16 @@ What's the purpose of "Crusader's Equipment"?
 * Damage: 57
 * Speed: 0.8
 * Impact: 35
-* Custom Tags: [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard"), **Shove**.
+* Custom Tags: [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard"), Brawler.
 * Eligible for the **Expertise** enchant
 
-**Puresteel Longsword** Recipe scroll can be bought in Monsoon
+**Ornate Longsword** Recipe scroll can be bought in Monsoon
 
-* Damage: 48
-* Speed: 0.9
+* Damage: 45
+* Speed: 1.0
 * Impact: 30
-* Custom Tags: [Finesse](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Finesse"), [Holy](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Holy").
-* Increases the damage dealt with weapon skills by 10%.Eligible for the **Lingering** enchant
+* Custom Tags: Brawler, [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard"), [Holy](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Holy").
+* Increases the damage dealt with weapon skills by 10%.Eligible for the **Lingering**, **Doomsayer** enchants
 
 **Ancient Relic**
 
@@ -120,11 +127,6 @@ What's the purpose of "Crusader's Equipment"?
 **Holy Water** Recipe scroll can be bought in Monsoon
 
 * Gives a stack of [Burst of Divinity](https://outward.thunderstore.io/package/ehaugw/Crusader/ "Burst of Divinity") when drunk (Requires [The Crusader](https://outward.thunderstore.io/package/ehaugw/Crusader/ "The Crusader") to work correctly).
-
-**Puresteel Ingot** Recipe scroll can be bought in Monsoon
-
-* A sizable ignot made of pure adamantine.
-* Can be used to craft exquisite equipment.
 
 **Zealot's Armor** Can be bought from Mathias if his shop was unlocked during the Purifier quest.
 
@@ -231,9 +233,21 @@ What's the purpose of "Crusader's Equipment"?
 * Imbues on the weapon last 10 seconds longer
 * Can be applied to 
 
-  * **Puresteel Longsword**
+  * **Ornate Longsword**
   * **Corrupted Longsword**
 * Recipe: Ancestor's Resting Place, Sylphina Incense - east close, west close
+
+**Flame of Anor**
+
+* Increases fire damage by 15%
+* Can be applied to 
+
+  * **Gnarled Staff**
+* Recipe: **Flash Moss** in enchanters guild
+* This is a relic:
+
+  * **Use Relic**: Applies Divine Flame Imbue
+  * **Unleash**: Creates an AoE explosion with some damage, high impact and inflicts **Scorched**
 
 
 
@@ -241,6 +255,14 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.1.0
+
+  * implement ring specific aegis
+  * implement gnarled staff
+  * implement flame of anor
+  * implement old desert tunic
+  * remove puresteel ingot
+  * turn puresteel longsword into ornate longsword
 * Version 3.0.18
 
   * Implement **Charred Hood**
