@@ -38,6 +38,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BaseDamageModifiers\BaseDamageModifiers.csproj">
+      <Project>{0e3a3ef3-64b4-4eee-bcfa-9e80bba7d284}</Project>
+      <Name>BaseDamageModifiers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EffectSourceConditions\EffectSourceConditions.csproj">
       <Project>{451d5546-0a6e-4183-92d2-4720ed3c2795}</Project>
       <Name>EffectSourceConditions</Name>
@@ -62,6 +66,14 @@
     <ProjectReference Include="..\Proficiencies\Proficiencies.csproj">
       <Project>{7a5a32c6-16a7-495e-a1f9-92250ca68d9b}</Project>
       <Name>Proficiencies</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RelicCondition\RelicCondition.csproj">
+      <Project>{e280e129-16fe-412b-8929-9f8d0f440035}</Project>
+      <Name>RelicCondition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RelicKeeper\RelicKeeper.csproj">
+      <Project>{d05e43f5-dbf9-4c9e-a6dd-8e2cd8dceacb}</Project>
+      <Name>RelicKeeper</Name>
     </ProjectReference>
     <ProjectReference Include="..\SynchronizedWorldObjects\SynchronizedWorldObjects.csproj">
       <Project>{bada105e-b03e-49e0-a87e-95af55944022}</Project>
@@ -118,6 +130,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EffectInitializer.cs" />
+    <Compile Include="RelicEffects\AddDivineFlameMainHand.cs" />
     <Compile Include="Enchants\AegisRing.cs" />
     <Compile Include="Enchants\FlameOfAnor.cs" />
     <Compile Include="Enchants\SoulWithin.cs" />
@@ -160,6 +174,7 @@
     <Compile Include="NPCs\NamelessManNPC.cs" />
     <Compile Include="NPCs\RangerHermitNPC.cs" />
     <Compile Include="QuestTrackers\RangerTracker.cs" />
+    <Compile Include="RelicEffects\StaffExplosion.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

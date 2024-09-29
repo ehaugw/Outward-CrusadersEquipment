@@ -13,13 +13,18 @@
     using System.IO;
     using TinyHelper;
     using Proficiencies;
+    using RelicKeeper;
+    using BaseDamageModifiers;
+    using HolyDamageManager;
 
     [BepInPlugin(GUID, NAME, VERSION)]
     [BepInDependency(SL.GUID, BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency(TinyHelper.GUID, TinyHelper.VERSION)]
     [BepInDependency(Proficiencies.GUID, Proficiencies.VERSION)]
     [BepInDependency(ImpendingDoomMod.GUID, ImpendingDoomMod.VERSION)]
-    [BepInDependency(HolyDamageManager.HolyDamageManager.GUID, HolyDamageManager.HolyDamageManager.VERSION)]
+    [BepInDependency(HolyDamageManager.GUID, HolyDamageManager.VERSION)]
+    [BepInDependency(BaseDamageModifiers.GUID, BaseDamageModifiers.VERSION)]
+    [BepInDependency(RelicKeeper.GUID, BepInDependency.DependencyFlags.SoftDependency)]
 
 
     public class CrusadersEquipment : BaseUnityPlugin
@@ -27,7 +32,7 @@
         public static CrusadersEquipment Instance;
 
         public const string GUID = "com.ehaugw.crusadersequipment";
-        public const string VERSION = "3.1.0";
+        public const string VERSION = "3.1.1";
         public const string NAME = "Crusaders Equipment";
 
         public static string ModFolderName = Directory.GetParent(typeof(CrusadersEquipment).Assembly.Location).Name.ToString();
@@ -100,6 +105,8 @@
         }
         private void OnPackLoaded()
         {
+            EffectInitializer.MakeDivineFlameImbue();
+
             corruptedLongswordInstance = CorruptedLongsword.MakeItem();
 
             puresteelLongswordInstance = PuresteelLongsword.MakeItem();
@@ -155,6 +162,13 @@
             RadiantSpark.Init();
 
             SoulWithin.MakeEnchant();
+
+            // Relic Keeper stuff
+            foreach (var id in new int[] { IDs.useRelicID, IDs.useRelic2ID })
+            {
+                if (ResourcesPrefabManager.Instance.GetItemPrefab(id) is Skill useRelic) AddDivineFlameMainHand.Apply(useRelic, IDs.gnarledStaffID);
+            }
+            if (ResourcesPrefabManager.Instance.GetItemPrefab(IDs.unleashID) is Skill unleash) StaffExplosion.Apply(unleash, IDs.gnarledStaffID);
         }
 
         private void MakeGoldToSilverRecipe()

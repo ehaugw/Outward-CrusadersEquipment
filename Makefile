@@ -6,7 +6,8 @@ exports = resources/artsource/exports
 unityassets = resources/unity/HolyAvengerBastard/Assets
 unityassetbundles = resources/unity/HolyAvengerBastard/Assets/AssetBundles
 
-dependencies = TinyQuests Proficiencies SynchronizedWorldObjects HolyDamageManager TinyHelper EffectSourceConditions ImpendingDoom
+dependencies = BaseDamageModifiers EffectSourceConditions HolyDamageManager ImpendingDoom Proficiencies RelicCondition SynchronizedWorldObjects TinyHelper
+
 
 assemble:
 	# common for all mods
