@@ -30,6 +30,7 @@ namespace CrusadersEquipment
                     IDs.WeaponTag,
                     IDs.ItemTag,
                     IDs.LingeringEligibleTag,
+                    IDs.MaulShoveTag,
                 }),
                 StatsHolder = new SL_WeaponStats()
                 {
@@ -67,15 +68,6 @@ namespace CrusadersEquipment
 
             myitem.ApplyTemplate();
             Item item = ResourcesPrefabManager.Instance.GetItemPrefab(myitem.New_ItemID);
-
-            var bonusDamage = TinyGameObjectManager.GetOrMake(item.transform, "Effects", true, true).gameObject.AddComponent<AffectStat>();
-
-            var tagSelectorList = new TagSourceSelector[] { new TagSourceSelector(TagSourceManager.Instance.GetTag(IDs.weaponSkilllDamageModifier)) };
-            bonusDamage.AffectedStat = new TagSourceSelector(TagSourceManager.Instance.GetTag(IDs.allDamagesTag));
-
-            bonusDamage.Tags = tagSelectorList;
-            bonusDamage.IsModifier = true;
-            bonusDamage.Value = 10;
             return item;
         }
         public static Item MakeRecipes()
@@ -90,8 +82,8 @@ namespace CrusadersEquipment
                 Ingredients = new List<SL_Recipe.Ingredient>() {
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.ancientRelicID },
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.darkStoneID },
-                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.adamantineID },
-                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.adamantineID}
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.darkStoneID },
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.mysteriousBladeID },
                 },
                 UID = newUID,
             }.ApplyTemplate();
