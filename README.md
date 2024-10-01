@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at September 29, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at October 01, 2024. 
 
 
 
@@ -115,6 +115,15 @@ What's the purpose of "Crusader's Equipment"?
 * Impact: 30
 * Custom Tags: Brawler, [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard"), [Holy](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Holy").
 * Increases the damage dealt with weapon skills by 10%.Eligible for the **Lingering**, **Doomsayer** enchants
+
+**Corrupted Longsword** Recipe scroll can be bought from Mathias if his shop was unlocked during the Purifier quest.
+
+* Damage: 57
+* Speed: 0.8
+* Impact: 35
+* Custom Tags: Brawler, [Bastard](https://outward.thunderstore.io/package/ehaugw/CustomMovesetPack/ "Bastard")
+* Eligible for the **Lingering** enchant
+* Restores health and burnt health equal to 2% of the damage dealt with this weapon
 
 **Ancient Relic**
 
@@ -248,6 +257,7 @@ What's the purpose of "Crusader's Equipment"?
 
   * **Use Relic**: Applies Divine Flame Imbue
   * **Unleash**: Creates an AoE explosion with some damage, high impact and inflicts **Scorched**
+  * **Arcane Influence**: Dealing fire damage also causes **Pain** buildup
 
 
 
@@ -255,6 +265,10 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.2.0
+
+  * arcane influence flame of anor causes pain from fire damage
+  * breaking change to RelicConditions, which means you must update **RelicKeeper** and [Crusader's Equipment](https://outward.thunderstore.io/package/ehaugw/CrusadersEquipment/ "Crusader's Equipment") at the same timecorrupted longsword no longer deal +10% skill damage, is enabled for maul shove, and is crafted from mysterious blade, dark stones and ancient relicMathias sells recipe for corrupted longsword
 * Version 3.1.1
 
   * Implement Flame of Anor relic interactions
