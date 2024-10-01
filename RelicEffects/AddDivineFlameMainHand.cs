@@ -2,6 +2,8 @@
 using SideLoader;
 using System;
 using UnityEngine;
+using RelicCondition;
+
 
 namespace RelicKeeper
 {

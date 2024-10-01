@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
+using RelicCondition;
+
 
 namespace RelicKeeper
 {
