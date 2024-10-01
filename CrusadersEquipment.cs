@@ -16,6 +16,8 @@
     using RelicKeeper;
     using BaseDamageModifiers;
     using HolyDamageManager;
+    using System;
+    using RelicCondition;
 
     [BepInPlugin(GUID, NAME, VERSION)]
     [BepInDependency(SL.GUID, BepInDependency.DependencyFlags.HardDependency)]
@@ -268,6 +270,29 @@
                 _lifespan += 10;
             }
             return true;
+        }
+    }
+
+    [HarmonyPatch(typeof(Character), "ReceiveHit", new Type[] { typeof(UnityEngine.Object), typeof(DamageList), typeof(Vector3), typeof(Vector3), typeof(float), typeof(float), typeof(Character), typeof(float), typeof(bool) })]
+    public class Character_ReceiveHit
+    {
+        [HarmonyPostfix]
+        public static void Postfix(Character __instance, ref DamageList __result, UnityEngine.Object _damageSource, DamageList _damage, Vector3 _hitDir, Vector3 _hitPoint, float _angle, float _angleDir, Character _dealerChar, float _knockBack, bool _hitInventory)
+        {
+            Character ownerCharacter =
+                (_damageSource as Item)?.OwnerCharacter ??
+                (_damageSource as Effect)?.OwnerCharacter ??
+                (_damageSource as EffectSynchronizer)?.OwnerCharacter;
+
+            var fireDamage = __result?[DamageType.Types.Fire]?.Damage ?? 0;
+
+            if (SkillRequirements.SafeHasSkillKnowledge(ownerCharacter, IDs.arcaneInfluenceID) && RelicCondition.HasRelicEquippedOrOnBackpack(ownerCharacter, RequiredEnchantID: IDs.flameOfAnorEnchantID) && fireDamage > 0)
+            {
+                if (__instance.StatusEffectMngr is StatusEffectManager statusEffectManager)
+                {
+                    statusEffectManager.AddStatusEffectBuildUp(ResourcesPrefabManager.Instance.GetStatusEffectPrefab(IDs.painNameID), fireDamage, ownerCharacter);
+                }
+            }
         }
     }
 }
