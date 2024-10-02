@@ -295,4 +295,27 @@
             }
         }
     }
+
+    [HarmonyPatch(typeof(GuaranteedDrop), "GenerateDrop")]
+    public class GuaranteedDrop_GenerateDrop
+    {
+        [HarmonyPostfix]
+        public static void Postfix(GuaranteedDrop __instance, ItemContainer _container, List<BasicItemDrop> ___m_itemDrops)
+        {
+            if (___m_itemDrops.Count() == 1 && ___m_itemDrops[0] is BasicItemDrop item && item.DroppedItem.ItemID == IDs.woodID && item.MinDropCount == 3 && item.MaxDropCount == 3)
+            {
+                if (new System.Random().Next(100) == 0)
+                {
+                    var basicItemDrop = new BasicItemDrop()
+                    {
+                        ItemID = IDs.gnarledStaffID,
+                        MaxDropCount = 1,
+                        MinDropCount = 1,
+
+                    };
+                    SideLoader.At.Invoke<GuaranteedDrop>(__instance, "GenerateItem", new object[] { _container, basicItemDrop, 1}); 
+                }
+            }
+        }
+    }
 }
