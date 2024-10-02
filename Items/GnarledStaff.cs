@@ -33,7 +33,7 @@ namespace CrusadersEquipment
                 StatsHolder = new SL_WeaponStats()
                 {
                     BaseValue = 10,
-                    RawWeight = 2f,
+                    RawWeight = 3f,
                     MaxDurability = 350,
                     AttackSpeed = weaponData[2],
                     BaseDamage = new List<SL_Damage>() { new SL_Damage() { Damage = weaponData[3], Type = DamageType.Types.Physical } },
