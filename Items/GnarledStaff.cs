@@ -32,7 +32,7 @@ namespace CrusadersEquipment
                 }),
                 StatsHolder = new SL_WeaponStats()
                 {
-                    BaseValue = 100,
+                    BaseValue = 10,
                     RawWeight = 2f,
                     MaxDurability = 350,
                     AttackSpeed = weaponData[2],
