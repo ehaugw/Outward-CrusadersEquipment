@@ -109,3 +109,6 @@ publish:
 	mv thunderstore/$(modname)_thunderstore.zip .
 install:
 	if [ ! -f omit.txt ]; then make forceinstall; fi
+web:
+	/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe       "https://thunderstore.io/c/outward/p/ehaugw/$(modname)/" > /dev/null 2>&1 &
+
