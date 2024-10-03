@@ -1,7 +1,7 @@
 [Mods by ehaugw](https://outward.thunderstore.io/package/ehaugw/ "Mods by ehaugw") | Support me on [Patreon](https://www.patreon.com/ehaugw "Patreon")
 
 
-This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at October 01, 2024. 
+This mods was confirmed to work with the (at that time) current base game (Outward Definitive Edition) at October 03, 2024. 
 
 
 
@@ -265,6 +265,9 @@ What's the purpose of "Crusader's Equipment"?
 # Patch notes
 
 
+* Version 3.2.1
+
+  * gnarled staff weight 2->3, value to 10, and has a 1% drop rate when collecting wood
 * Version 3.2.0
 
   * arcane influence flame of anor causes pain from fire damage
@@ -500,6 +503,9 @@ What's the purpose of "Crusader's Equipment"?
 * [Rune of Protection](https://thunderstore.io/c/outward/p/ehaugw/RuneOfProtection "Rune of Protection")
 
   * Enable manaless characters to gain Runic Protection through a limited consumable
+* [Relic Keeper](https://outward.thunderstore.io/package/ehaugw/RelicKeeper/ "Relic Keeper")
+
+  * Gives the player an opportunity to collect relics of all rarities, and channel their unique powers.
 
 
 
