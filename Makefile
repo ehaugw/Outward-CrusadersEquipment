@@ -19,7 +19,7 @@ assemble:
 	@make itemtextured NAME="WolfRangerArmor" FILENAME="wolf_ranger_armor" MATERIALNAME="mat_cha_WolfBattleMedicArmor" PROPERTIES="properties_color_spec"
 	@make itemtextured NAME="OldDesertTunic" FILENAME="old_desert_tunic" MATERIALNAME="mat_cha_desertArmor"
 	@make itemtextured NAME="CharredHood" FILENAME="charred_hood" MATERIALNAME="mat_cha_beggarMaleArmorA"
-	@make itemtextured NAME="RangersHood" FILENAME="rangers_hood" MATERIALNAME="mat_cha_beggarMaleArmorA" ICONNAME="ranger_hood"
+	@make itemtextured NAME="RangersHood" FILENAME="ranger_hood" MATERIALNAME="mat_cha_beggarMaleArmorA" ICONNAME="ranger_hood"
 	@make itemtextured NAME="CrusadersPlateArmor" FILENAME="crusaders_plate_armor" MATERIALNAME="mat_cha_runicArmor"
 	@make itemtextured NAME="CrusadersArmor" FILENAME="crusaders_armor" MATERIALNAME="mat_cha_armorKaziteA"
 	@make itemtextured NAME="CrusadersBoots" FILENAME="crusaders_boots" MATERIALNAME="mat_cha_whitePriestArmor"
