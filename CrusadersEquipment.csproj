@@ -164,7 +164,6 @@
     <Compile Include="Items\PuresteelLongsword.cs" />
     <Compile Include="Items\HolyWaterItem.cs" />
     <Compile Include="CrusadersEquipment.cs" />
-    <Compile Include="Items\RadiantSpark.cs" />
     <Compile Include="Items\ThickWhitePaint.cs" />
     <Compile Include="Items\ZealotsArmor.cs" />
     <Compile Include="Items\ZealotsBoots.cs" />

@@ -161,8 +161,6 @@
             OldDesertTunic.MakeItem();
 
             Doomsayer.MakeEnchantEffect();
-            RadiantSpark.Init();
-
             SoulWithin.MakeEnchant();
 
             // Relic Keeper stuff
