@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
 using RelicCondition;
-
+using TinyHelper;
 
 namespace RelicKeeper
 {
@@ -67,17 +67,7 @@ namespace RelicKeeper
                             {
                                 Knockback = 70,
                                 Damage = new List<SL_Damage>{
-                                    new SL_Damage()
-                                    {
-                                        Damage = 30,
-                                        Type = DamageType.Types.Fire,
-                                    },
-                                    new SL_Damage()
-                                    {
-                                        Damage = 10,
-                                        Type = HolyDamageManager.HolyDamageManager.GetDamageType(),
-                                    },
-                                    new SL_Damage()
+                                   new SL_Damage()
                                     {
                                         Damage = 10,
                                         Type = DamageType.Types.Physical,
@@ -89,6 +79,17 @@ namespace RelicKeeper
                 },
             }.ApplyToTransform(relicCondition.EffectsContainer) as ShootBlast;
 
+            var damageBlastEffect = damageBlast.BaseBlast.transform.Find("Effects");
+            damageBlastEffect.gameObject.SetActive(true);
+
+            var damage = damageBlastEffect.gameObject.AddComponent<PunctualDamageSecondaryScaling>();
+
+            damage.BaseDamage = new DamageType[]
+            {
+                new DamageType() { Damage = 40, Type = DamageType.Types.Fire },
+            };
+            damage.Knockback = 0;
+            damage.ScalingToType = HolyDamageManager.HolyDamageManager.GetDamageType();
 
             var smokeBlast = new SL_ShootBlast()
             {
